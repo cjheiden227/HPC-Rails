@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  
-  root 'home_page#home'
+  resources :home_page, only: :index
+  root 'home_page#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
