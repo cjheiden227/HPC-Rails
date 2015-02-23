@@ -1,0 +1,10 @@
+ <%= simple_form_for @message, url: email_form_path, remote: true do |f| %>
+            <p>This is the form </p>
+            <%= f.input :name %>
+            <%= f.input :email %>
+            <%= f.input :phone %>
+            <%= f.input :body, as: :text %>
+
+            <%=f.button :submit %>
+
+<% end %>

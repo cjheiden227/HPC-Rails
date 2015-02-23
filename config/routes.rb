@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   resources :home_page, only: :index
-  root 'home_page#index'
+  match '/email' => 'home_page#send_email_form', as: :email_form, via: :post
+
+###
+  root :to => 'home_page#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

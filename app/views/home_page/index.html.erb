@@ -1,26 +1,4 @@
-<!-- Begin Navigation -->
 
-  <div class="navbarWrapper contain-to-grid shadow">
-    <nav class="navbar top-bar" data-topbar role="navigation"> 
-      <ul class="title-area">
-        <li class="name"> 
-          <h1><a id="logo-link" href="#home"><%=image_tag('logo.png', id: "logo")%></a></h1> 
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li> 
-       
-      <section class="top-bar-section">
-        <!-- Left Nav Section -->
-        <ul class="left">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#locations">Locations</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </section>
-      </ul> 
-     </nav>
-   </div>
-   <!-- End Navigation -->
 
    
    <!-- Jumbotron -->
@@ -376,9 +354,10 @@
               <h1><%= image_tag('squigs.png', width: '50') %>Contact<%= image_tag('squigs.png', width: '50') %></h1>
         </div>
       </div>
+    
       <div class="row">
         <div class="margin-top-40 small-12 columns">
-         
+         <%= render 'form' %>
                 <ul class="small-block-grid-3" data-equalizer>
                   <li data-equalizer-watch>
                     <h4>Phone</h4>                   

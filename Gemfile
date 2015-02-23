@@ -36,6 +36,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #Custom HPC gems
 gem 'foundation-rails'
 gem 'active_attr'
+gem 'simple_form'
 gem 'validates_email_format_of'
 
 group :development, :test do

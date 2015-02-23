@@ -1,0 +1,10 @@
+<%= form_for @message, url:{action: 'send_email_form'} do |f| %>
+	<p>This is the form partial</p>
+	<%= f.text_field :name %>
+	<%= f.text_field :email %>
+	<%= f.text_field :phone %>
+	<%= f.text_area :body %>
+
+	<%=f.submit "Send Message" %>
+
+<% end %>
