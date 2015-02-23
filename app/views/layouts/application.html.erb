@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="nk9ewdmQz46dX1gmZJ4TNKpqLyvUxcxNmdeLok4Ak5g" />
+    <title>Hamlin  Psyche Center | A Psychiatric Clinic</title>
+
+  <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Droid+Sans', media: 'all', 'data-turbolinks-track' => false %>
+  <%= stylesheet_link_tag    'app', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    'my-app', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= stylesheet_link_tag    'foundation-icons/foundation-icons', media: 'all', 'data-turbolinks-track' => true %>  
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+<%= javascript_include_tag 'foundation.min', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'jquery.stickyNavbar.min', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'app', 'data-turbolinks-track' => true %>
+
+</body>
+</html>
