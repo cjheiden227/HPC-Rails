@@ -1,13 +1,9 @@
 $(document).ready(function(){
 	var form=$('#new_message');  
-	var parent=form.parent();
 	var form_header=$('#form_header');
-
+    <% if @message.valid? %>
     $('#spinner').hide();
-    <%if @message.valid?%>
-   		form.hide();
-    	parent.append('<h4>Your message has been sent</h4>');
-    <%else%>
-    	form_header.append("<%= j render(:partial => 'errors') %>");
+   	form.children().hide();
+
     <%end%>
 });

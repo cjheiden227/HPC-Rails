@@ -24,6 +24,7 @@ body{
 #new_message{
 	padding: 2rem;
 	border: 1px solid #6C6F8D;
+	min-height: 350px;
 }
 
 #message_body{

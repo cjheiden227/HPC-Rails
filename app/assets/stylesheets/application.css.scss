@@ -1,0 +1,44 @@
+
+/* ...
+*= require_self
+*= require foundation_and_overrides
+*= require foundation
+*= require fv
+
+*/
+
+@import "foundation_and_overrides";
+
+
+
+//Tweak small text styles
+
+h1 {
+    @media #{$small-only} {
+         font-size: 1.9rem !important;
+    }
+}
+
+
+.footer-text>h3{
+	  @media #{$small-only} {
+         font-size: 1rem !important;
+    }
+}
+
+.footer-text p{
+	  @media #{$small-only} {
+         font-size: .6rem !important;
+    }
+}
+
+.footer-nav{
+	@media #{$small-only} {
+         font-size: .9rem !important;
+    }
+}
+
+.row .row{
+    margin: 0 !important;
+}
+
