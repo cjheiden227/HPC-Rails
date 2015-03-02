@@ -8,17 +8,17 @@
 
   <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Droid+Sans', media: 'all', 'data-turbolinks-track' => false %>
   <%= stylesheet_link_tag    'app', media: 'all', 'data-turbolinks-track' => true %>
-    <%= stylesheet_link_tag    'my-app', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'my-app', media: 'all', 'data-turbolinks-track' => true %>
 
   <%= stylesheet_link_tag    'foundation-icons/foundation-icons', media: 'all', 'data-turbolinks-track' => true %>  
-
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'spin.min', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <!-- Begin Navigation -->
 
-  <div class="navbarWrapper contain-to-grid shadow">
+  <div class="data-magellan-expedition="fixed" contain-to-grid shadow">
     <nav class="navbar top-bar" data-topbar role="navigation"> 
       <ul class="title-area">
         <li class="name"> 
@@ -29,10 +29,10 @@
       <section class="top-bar-section">
         <!-- Left Nav Section -->
         <ul class="left">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#locations">Locations</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a data-magellan-destination="home" href="#home">Home</a></li>
+          <li><a data-magellan-destination="services" href="#services">Services</a></li>
+          <li><a data-magellan-destination="locations"href="#locations">Locations</a></li>
+          <li><a data-magellan-destination="contact" href="#contact">Contact</a></li>
         </ul>
       </section>
       </ul> 
@@ -45,7 +45,6 @@
 
 <%= yield %>
 <%= javascript_include_tag 'foundation.min', 'data-turbolinks-track' => true %>
-<%= javascript_include_tag 'jquery.stickyNavbar.min', 'data-turbolinks-track' => true %>
 <%= javascript_include_tag 'app', 'data-turbolinks-track' => true %>
  <footer class="footer-shadow">
     <div class="row text-center">

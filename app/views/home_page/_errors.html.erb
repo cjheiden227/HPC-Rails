@@ -1,0 +1,11 @@
+<%if @message.errors.any?%>
+<div id="error_explanation">
+	<ul>
+		<li class='error'>Please correct the following errors:</li>
+        <% @message.errors.full_messages.each do |msg| %>
+          <li class='error'><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+   
+<%end%>

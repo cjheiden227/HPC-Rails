@@ -2,7 +2,7 @@
 
    
    <!-- Jumbotron -->
-   <div id="home" class="shadow scrollto jumbotron">
+   <div id="home" data-magellan-arrival="home" class="shadow jumbotron">
     <!-- <img  src="img/jumbo_bg.jpg"> -->
       <div class="banner">
         <div class="banner-area">
@@ -18,24 +18,22 @@
                   </div>
                 </div>
                 <div class="button-group radius stack-for-small small-centered text-center columns buttons">
-                    <a href="#contact" class="button large">Get an Appointment</a>
-                    <a href="#services" class="button large">Learn More</a>               
+                    <a id="banner_contact" class="button large">Get an Appointment</a>
+                    <a id="banner_service" class="button large">Learn More</a>            
                 </div>
               </div>
            </div>
           </div>
           </div>
         </div>
-
       </div>
- 
   <!-- End Jumbotron -->
 
   <!-- Sub-Content -->
   <div id="sub_content">
     <a class="anchor" name="services-section"></a>
     <!-- Begin Services -->
-    <div id="services" class="scrollto">
+    <div id="services" data-magellan-arrival="services" >
       <div class="row fullWidth">
         <div class="header small-12 columns">
                 <h1><%= image_tag('squigs.png', width: '50') %>Services<%= image_tag('squigs.png', width: '50') %></h1>
@@ -156,7 +154,7 @@
               <div class="small-5 small-centered columns">
                 <div class=" margin-bottom-40 section-footer-link">
                   <a href="#services">
-                    <%=image_tag('logo_alt.png', clasS: 'section-footer-logo')%>
+                    <%=image_tag('logo_alt.png', class: 'section-footer-logo')%>
                     <p>Back to Top </p>
                   </a>    
                 </div>                
@@ -173,7 +171,7 @@
             </svg>
       </div>
       <!-- Begin Locations -->
-     <div id="locations" class="scrollto">
+     <div id="locations" data-magellan-arrival="locations">
       <div class="row fullWidth ">
         
         <div class="header small-12 columns">
@@ -347,36 +345,30 @@
             </svg>
       </div>
     <!-- Begin Contact -->
-    <div id="contact" class="scrollto">
+    <div id="contact" data-magellan-arrival="contact">
       <a class="anchor" name="contact-form"></a>
       <div class="row fullWidth ">
         <div class="header small-12 columns">
               <h1><%= image_tag('squigs.png', width: '50') %>Contact<%= image_tag('squigs.png', width: '50') %></h1>
         </div>
       </div>
-    
-      <div class="row">
-        <div class="margin-top-40 small-12 columns">
+      <div class="margin-top-40 row">
+        <h3>Need an appointment?  Need information?  Need to request a document?</h3>
+        <h5>Get in touch by filling out the form below or by calling or faxing.</h5>
+        <div class="margin-bottom-40 margin-top-40 small-8 columns">
          <%= render 'form' %>
-                <ul class="small-block-grid-3" data-equalizer>
-                  <li data-equalizer-watch>
-                    <h4>Phone</h4>                   
-                    <i class="fi-telephone large realbig-icon"></i>  
-                    <p>818-780-4409</p> 
-                  </li>
-                  <li data-equalizer-watch>   
-                    <h4>Email</h4>
-                    <i class="fi-mail large realbig-icon"></i>
-                    <p>referrals@<br>tacurtismd.com</p>
-                  </li>
-                  <li data-equalizer-watch>
-                    <h4>Fax</h4>
-                    <i class="fi-page-export large realbig-icon"></i>
-                    <p>818-780-4472</p>
-                  </li>
-                </ul>  
-                       
-            
+         <div id="spinner"></div> 
+        </div>
+    
+        <div class="margin-top-40 small-4 columns">
+            <h4>Phone</h4>                   
+            <i class="fi-telephone large realbig-icon"></i>  
+            <p>818-780-4409</p> 
+        </div>
+        <div class="margin-top-40 small-4 columns">
+            <h4>Fax</h4>
+            <i class="fi-page-export large realbig-icon"></i>
+            <p>818-780-4472</p>
         </div>
       </div>
     </div>
@@ -384,29 +376,6 @@
   </div>
   <!-- End Sub-Content -->
 
-  <footer class="footer-shadow">
-    <div class="row text-center">
-      <div class="full-height border small-7 large-6 columns">
-          <div class="footer-text vertical-center">
-
-            <h3>Hamlin Psyche Center</h3>
-            <p>PH: 818-780-4409</p>
-            <p>FAX: 818-908-5188</p>
-            <p class="copyright">&copy; 2014 Hamlin Psyche Center</p>
-            <%=image_tag('footer_logo.png', id: 'footer-logo')%>
-          </div>
-      </div>
-      <div class="full-height small-5 large-6 columns">
-          <div class="vertical-center">
-            <ul class="footer-text footer-nav">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#locations">Locations</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-      </div>
-    </div>
-  </footer>
+ 
 
 
