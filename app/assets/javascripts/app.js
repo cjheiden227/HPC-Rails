@@ -45,6 +45,7 @@ $(document).ready(function(){
             var spinner = new Spinner(opts).spin(target);
         }
         else{
+            $(this).prev().prev().addClass('label-error');
             e.preventDefault();
         }
     });
@@ -79,12 +80,21 @@ $(document).ready(function(){
         }
     });
 
-    $('#new_message input').on('blur', function () {
-        if ($(this).valid() && $('#new_message').valid()) {                 
-            $('#submit').prop('disabled', false);        
-        } else {
-            $('#submit').prop('disabled', 'disabled');   
+    $('#new_message .input').on('blur keypress', function () {
+        if ($(this).valid()){
+            $(this).prev().prev().removeClass('label-error');
+        }
+        else{
+            $(this).prev().prev().addClass('label-error');
         }
     });
+    //   $('#new_message .input').on('keypress', function () {
+    //     if ($(this).valid()){
+    //         $(this).prev().prev().removeClass('label-error');
+    //     }
+    //     else{
+    //         $(this).prev().prev().addClass('label-error');
+    //     }
+    // });
 });
 
