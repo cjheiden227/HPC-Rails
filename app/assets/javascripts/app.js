@@ -51,12 +51,14 @@ $(document).ready(function(){
     //Validate the form
     $('#new_message').validate({
         errorPlacement:function(error, element){
+            element.prev().addClass('label-error');
             element.prev().after(error);
         },
         rules: {
             'message[name]' : {required: true},
             'message[email]': {required: true, email: true},
-            'message[phone]': {required: true, phoneUS: true}
+            'message[phone]': {required: true, phoneUS: true}, 
+            'message[body]' : {required: true}
         
         },
         messages: {
@@ -70,12 +72,15 @@ $(document).ready(function(){
             'message[phone]': {
                 required: "We need your phone number contact you",
                 phoneUS: "Please enter a valid phone number"
+            },
+             'message[body]': {
+                required: "We need a message"
             }
         }
     });
 
     $('#new_message input').on('blur', function () {
-        if ($(this).valid() && $('#new_message').valid()) {                   
+        if ($(this).valid() && $('#new_message').valid()) {                 
             $('#submit').prop('disabled', false);        
         } else {
             $('#submit').prop('disabled', 'disabled');   

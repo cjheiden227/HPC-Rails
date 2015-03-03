@@ -8,23 +8,27 @@ body{
 	width: 100%;
 }
 
-.error {
-	font-variant: normal;
-	color: white !important;
+ .label-error {
 	background-color: #f04124;
+	color: white !important;
+}
+
+label .error {
+	text-align: center !important;
+}
+.confirmation, .error, #new_message .label{
+	font-variant: normal;
 }
 
 #new_message .label{
 	width: 100%;
-	font-variant: normal;
 	font-size: .9rem;
-
 }
 
-#new_message{
+.form-header{
 	padding: 2rem;
 	border: 1px solid #6C6F8D;
-	min-height: 350px;
+
 }
 
 #message_body{
@@ -32,12 +36,6 @@ body{
 	max-height: 150px;
 }
 
-.input .error{
-	margin-bottom: 1rem;
-}
-ul>.error{
-	list-style-type: none;
-}
 
 
 /*NAVBAR STYLES */
@@ -71,11 +69,11 @@ ul>.error{
 }
 
 /*Hover styles for nav links*/
-.left li>a{
+.right li>a{
 	-webkit-transition: all .2s ease-in-out; /* For Safari 3.1 to 6.0 */
     transition: all .2s ease-in-out;
 }
-.left li>a:hover{
+.right li>a:hover{
 	text-decoration: underline;
 }
 
@@ -434,7 +432,7 @@ div>.big-icon{
 /*CONTACT FORM STYLES*/
 
 .realbig-icon{
-	font-size: 90px;
+	font-size: 60px;
 	color: #0b1042;
 }
 
