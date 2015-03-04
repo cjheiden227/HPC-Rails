@@ -1,6 +1,4 @@
 
-
-   
    <!-- Jumbotron -->
    <div id="home" class="shadow scrollto jumbotron">
     <!-- <img  src="img/jumbo_bg.jpg"> -->
@@ -192,22 +190,18 @@
               </ul>
 
               <ul id="pane" class="small-block-grid-3" data-equalizer>  
-                  <li data-equalizer-watch> <i class="realbig-icon fi-map large"></i><h5>Convenient locations in Van Nuys and Long Beach.</h5></li>
-                  <li data-equalizer-watch><i class="realbig-icon fi-torsos-all large"></i><h5>Our clinics are staffed with dedicated professionals.</h5></li>
-                  <li data-equalizer-watch><i class="realbig-icon fi-first-aid large"></i><h5>Treatment and evaluation available at all locations.</h5></li>    
+                  <li data-equalizer-watch> <i class="realbig-icon fi-map large"></i><p>Convenient locations in Van Nuys and Long Beach.</p></li>
+                  <li data-equalizer-watch><i class="realbig-icon fi-torsos-all large"></i><p>Our clinics are staffed with dedicated professionals.</p></li>
+                  <li data-equalizer-watch><i class="realbig-icon fi-first-aid large"></i><p>Treatment and evaluation available at all locations.</p></li>    
               </ul>
             </div>
           </div>
           <div class="row">
-            <h2 class="header-border">
-             <%= image_tag('squigs.png', width: '50') %>
-              Directions
-              <%= image_tag('squigs.png', width: '50') %>
-            </h2>
-          <p>Click on the images below to get a map to our clinics.</p>
-            <div class="medium-5 columns">
-              <div class=" row"> 
-                <div class="map-button small-6 medium-12 columns">
+            <div class="small-12 small-centered columns">
+              <div class=" row">
+                <ul class="small-block-grid-3" data-equalizer> 
+                <li data-equalizer-watch>
+                <div class="map-button">
                 <div id="vn" class="mapWrap text-center">
                   <a class="map-link" data-map="14531 Hamlin Street Van Nuys CA 91411"><%=image_tag('vn.jpg', class: 'big-icon')%>
                   <p class="shadow initial-title">Van Nuys</p>
@@ -220,7 +214,19 @@
                   </a>
                   </div>
                 </div>
-                <div class="map-button small-6 medium-12 columns">
+                </li>
+                <li class="directions" data-equalizer-watch>
+                  <div class="vertical-center">
+                  <h2>
+                     <%= image_tag('squigs.png', width: '50') %>
+                      Directions
+                      <%= image_tag('squigs.png', width: '50') %>
+                  </h2>
+                  <p>Click on the images to get a map to our clinics.</p>
+                  </div>
+              </li>
+              <li data-equalizer-watch>
+                <div class="map-button">
                   <div id="lb" class="mapWrap">
                 <a class="map-link" data-map="4300 Long Beach Blvd. Long Beach CA 90807"><%=image_tag('lb.jpg', class: 'big-icon')%>
                   <p class="shadow initial-title">Long Beach </p>
@@ -232,10 +238,12 @@
                   </div>
                 </a>
                   </div>
-                </div>    
+                </div> 
+                </li>
+                </ul>   
               </div>
             </div>
-            <div class="medium-7 columns">
+            <div class="small-12 small-centered columns">
                 <div class="row">
                  <iframe class="map-target small-12 columns big-icon"
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCnXy5N52r2BsyqhjIU-T4shbIqgeaf34g&q=14531+Hamlin+Street+Van+Nuys+CA+91411">
@@ -353,23 +361,9 @@
       <div class="margin-top-40 row">
         <div class="small-12 medium-10 small-centered columns">
           <h3>Need an appointment?  Need information?  Need to request a document?</h3>
-          <h5>Get in touch by filling out the form below or by calling or faxing.</h5>
+          <p>Get in touch by filling out the form below or by calling or faxing.</p>
          </div>
       </div>
-      <!--   <div class="small-centered small-4 columns">
-        <ul class="small-block-grid-2">
-          <li>
-            <h4>Call</h4>
-            <i class="fi-telephone large realbig-icon"></i>  
-            <p>818-780-4409</p> 
-          </li>
-          <li>
-            <h4>Fax</h4>
-            <i class="fi-page-export large realbig-icon"></i>
-            <p>818-780-4472</p>
-          </li>
-        </ul>
-        </div> -->
         <div class="form-header margin-bottom-40 small-centered small-6 columns">
          <%= render 'form' %>
          <div id="spinner"></div> 

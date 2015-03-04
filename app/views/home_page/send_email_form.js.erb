@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	var form=$('#new_message');  
-	var form_header=$('#form_header');
+	var form_header=$('.form-header');
     <% if @message.valid? %>
+    	form_header.removeClass('submitting');
         $('#spinner').hide();
        	form.children().hide();
         form.append('<%= j render(:partial=>"confirmation")%>');
