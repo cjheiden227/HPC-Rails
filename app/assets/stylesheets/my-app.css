@@ -308,6 +308,10 @@ div>.big-icon{
 	margin-bottom: 40px !important;
 }
 
+.margin-bottom-20{
+	margin-bottom: 20px !important;
+}
+
 .padding-20, .padding-20>li{
 	padding-top: 20px;
 }
@@ -579,7 +583,10 @@ footer{
 /* Smartphones (portrait and landscape) ----------- */
 @media (min-height: 320px) and (max-width: 480px){
 
-	
+	#logo{
+		width: 200px;
+		height: auto;
+	}
 	.header{
 		margin-top: 40px;
 	}
@@ -802,19 +809,19 @@ footer{
 	}
 
 	.mapWrap{
-		width: 225px;
-		height: 169px;
+		width: 175px;
+		height: 131.4444444444px;
 	}
 
 	.map-target{
-		height: 400px;
+		height: 300px;
 	}
 
 	.mapDescription{
 	
-		width: 225px;
+		width: 175px;
 		position: absolute;
-		margin-right: -225px;
+		margin-right: -175px;
 		top: 40%;
 
 	}
