@@ -145,7 +145,7 @@
               Need an appointment? 
             </h3>
           </div>
-            <a href="#contact-form" class="margin-top-40 margin-bottom-40 alt-button button radius large">Contact the Center</a>             
+            <a id="service_contact" class="margin-top-40 margin-bottom-40 alt-button button radius large">Contact the Center</a>             
           </div>
           <div class="small-12 columns">
             <div class="row">
@@ -198,34 +198,36 @@
           </div>
           <div class="row">
             <div class="small-12 small-centered columns">
-              <div class=" row">
-                <ul class="small-block-grid-3" data-equalizer> 
-                <li data-equalizer-watch>
-                <div class="map-button">
-                <div id="vn" class="mapWrap text-center">
-                  <a class="map-link" data-map="14531 Hamlin Street Van Nuys CA 91411"><%=image_tag('vn.jpg', class: 'big-icon')%>
-                  <p class="shadow initial-title">Van Nuys</p>
-                  <div class="mapDescriptionWrapper">
-                  <div class="mapDescription">
-                    <p>14531 Hamlin Street</p>
-                    <p>Van Nuys, CA 91411</p>
-                    </div>
-                  </div>
-                  </a>
-                  </div>
-                </div>
-                </li>
-                <li class="directions" data-equalizer-watch>
-                  <div class="vertical-center">
+
+               
                   <h2>
                      <%= image_tag('squigs.png', width: '50') %>
                       Directions
                       <%= image_tag('squigs.png', width: '50') %>
                   </h2>
                   <p>Click on the images to get a map to our clinics.</p>
+            
+              <div class="row">
+                <div class="small-4 columns">
+               
+                  <div class="small-12 columns">
+                  <div class="map-button">
+                  <div id="vn" class="mapWrap text-center">
+                    <a class="map-link" data-map="14531 Hamlin Street Van Nuys CA 91411"><%=image_tag('vn.jpg', class: 'big-icon')%>
+                    <p class="shadow initial-title">Van Nuys</p>
+                    <div class="mapDescriptionWrapper">
+                    <div class="mapDescription">
+                      <p>14531 Hamlin Street</p>
+                      <p>Van Nuys, CA 91411</p>
+                      </div>
+                    </div>
+                    </a>
+                    </div>
                   </div>
-              </li>
-              <li data-equalizer-watch>
+                  </div>
+
+                  <div class="small-12 columns">
+                  
                 <div class="map-button">
                   <div id="lb" class="mapWrap">
                 <a class="map-link" data-map="4300 Long Beach Blvd. Long Beach CA 90807"><%=image_tag('lb.jpg', class: 'big-icon')%>
@@ -239,16 +241,16 @@
                 </a>
                   </div>
                 </div> 
-                </li>
-                </ul>   
               </div>
-            </div>
-            <div class="small-12 small-centered columns">
+              </div>
+              <div class="small-8 columns">
                 <div class="row">
                  <iframe class="map-target small-12 columns big-icon"
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCnXy5N52r2BsyqhjIU-T4shbIqgeaf34g&q=14531+Hamlin+Street+Van+Nuys+CA+91411">
                 </iframe>
                 </div>
+            </div>
+              </div>
             </div>
           </div>
         
@@ -364,7 +366,7 @@
           <p>Get in touch by filling out the form below or by calling or faxing.</p>
          </div>
       </div>
-        <div class="form-header margin-bottom-40 small-centered small-6 columns">
+        <div class="form-header margin-bottom-40 small-centered small-12 medium-9 large-6 columns">
          <%= render 'form' %>
          <div id="spinner"></div> 
         </div>

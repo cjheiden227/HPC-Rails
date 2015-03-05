@@ -1,4 +1,5 @@
 
+$(document).foundation();
 
 //Initialize the sticky navbar
 $('.navbarWrapper').stickyNavbar({
@@ -7,7 +8,14 @@ $('.navbarWrapper').stickyNavbar({
 });
 //Grab map coordinates from link
 $(document).ready(function(){
-    
+    $('#banner_contact, #service_contact').on('click', function(e){
+        $.scrollTo('#contact', 600, {offset:{top:-140, left:0}});
+
+    });
+
+    $('#banner_service').on('click', function(e){
+        $.scrollTo('#services', 600, {offset:{top:-140, left:0}});
+    });
     //Listen for clicks on the map links
     $('.map-link').on('click', function(e){
     	e.preventDefault();

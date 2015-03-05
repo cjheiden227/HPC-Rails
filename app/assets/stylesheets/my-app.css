@@ -18,11 +18,14 @@ p{
 /*Logo styling*/
 
 #logo{
+	max-width: 316px;
 	height: 79px;
 	
 }
 
 #logo-link{
+	height: 80px;
+	max-width: 316px;
 	padding: 0;
 	margin-top: -2px;
 	background-color: #0b1042 !important; 
@@ -340,8 +343,8 @@ div>.big-icon{
 
 .mapWrap {
   position: relative;
-  width: 300px;
-  height: 225px;
+  width: 250px;
+  height: 187.5px;
   transition: all .3s;
 
 }
@@ -381,9 +384,9 @@ div>.big-icon{
 }
 
 .mapDescription{
-	width: 300px;
+	width: 250px;
 	position: absolute;
-	margin-right: -300px;
+	margin-right: -250px;
 	top: 40%;
 }
 
@@ -576,9 +579,6 @@ footer{
 /* Smartphones (portrait and landscape) ----------- */
 @media (min-height: 320px) and (max-width: 480px){
 
-	#logo{
-		width: 85%;
-	}
 	
 	.header{
 		margin-top: 40px;
