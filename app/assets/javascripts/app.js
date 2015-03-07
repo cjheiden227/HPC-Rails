@@ -6,16 +6,33 @@ $('.navbarWrapper').stickyNavbar({
         startAt: 0,
         selector: "a",
 });
-//Grab map coordinates from link
-$(document).ready(function(){
-    $('#banner_contact, #service_contact').on('click', function(e){
-        $.scrollTo('#contact', 600, {offset:{top:-140, left:0}});
 
+$(document).ready(function(){
+
+    //Set up scrolling behavior
+    $('#banner_contact').on('click', function(e){
+        $.scrollTo('#contact', 600, {offset:{top:-120, left:0}});
+
+    });
+
+    $('#service_contact').on('click', function(e){
+        $.scrollTo('#contact', 600, {offset:{top:-60, left:0}});
+
+    });
+
+    $('#service_footer').on('click', function(e){
+        $.scrollTo('#services', 600, {offset:{top:-60, left:0}});
     });
 
     $('#banner_service').on('click', function(e){
-        $.scrollTo('#services', 600, {offset:{top:-140, left:0}});
+        $.scrollTo('#services', 600, {offset:{top:-120, left:0}});
     });
+
+     $('#location_footer').on('click', function(e){
+        $.scrollTo('#locations', 600, {offset:{top:-60, left:0}});
+    });
+
+     //Grab map coordinates from link
     //Listen for clicks on the map links
     $('.map-link').on('click', function(e){
     	e.preventDefault();
@@ -98,13 +115,5 @@ $(document).ready(function(){
             $(this).prev().prev().addClass('label-error');
         }
     });
-    //   $('#new_message .input').on('keypress', function () {
-    //     if ($(this).valid()){
-    //         $(this).prev().prev().removeClass('label-error');
-    //     }
-    //     else{
-    //         $(this).prev().prev().addClass('label-error');
-    //     }
-    // });
 });
 

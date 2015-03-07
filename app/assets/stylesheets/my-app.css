@@ -202,7 +202,7 @@ p{
 
 .section-footer-logo{
 	width: 50%;
-	max-width: 250px;
+	max-width: 200px;
 }
 
 
@@ -659,8 +659,8 @@ footer{
 	}
 
 	.mapWrap{
-		width: 100px;
-		height: 75px;
+		width: 90px;
+		height: 67.5px;
 	}
 
 	#vn{
@@ -675,15 +675,15 @@ footer{
 
 	.mapDescription{
 	
-		width: 100px;
+		width: 90px;
 		position: absolute;
-		margin-right: -100px;
+		margin-right: -90px;
 		top: 40%;
 
 	}
 
 	.mapDescription p, .initial-title{
-		font-size:.55rem;
+		font-size:.50rem;
 	}
 
 	.realbig-icon{
@@ -742,15 +742,15 @@ footer{
 	}
 
 	.mapWrap{
-		width: 175px;
-		height: 131px;
+		width: 170px;
+		height: 127.257142857px;
 	}
 
 	.mapDescription{
 	
-		width: 175px;
+		width: 170px;
 		position: absolute;
-		margin-right: -175px;
+		margin-right: -170px;
 		top: 40%;
 
 	}
@@ -823,9 +823,15 @@ footer{
 		position: absolute;
 		margin-right: -175px;
 		top: 40%;
-
+		
 	}
-
+	
+	.initial-title{
+		font-size: .95rem;
+	}
+	.mapDescription>p{
+		font-size: .9rem;
+	}
 	.s-para-left, .s-para-right{
 		font-size: .8rem;
 	}
@@ -854,5 +860,35 @@ footer{
 	footer{
 		height: 40%;
 	}
+}
+
+@media (min-width: 0em) and (max-width: 40em){
+	
+	.mapWrap:hover{
+		transform:none;
+	}
+
+	h1{
+		font-size: 1.9rem !important;
+	}
+
+	.footer-text>h3{
+	 	font-size: 1rem !important;
+	}	
+
+	.footer-text p{
+	
+		font-size: .6rem !important;
+    
+	}
+
+	.footer-nav, #pane li>p{
+      	font-size: .9rem !important;
+    
+	}
+}
+
+.row .row{
+    margin: 0 !important;
 }
 
