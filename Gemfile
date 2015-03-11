@@ -34,7 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 #Custom HPC gems
-gem 'foundation-rails'
+gem 'foundation-rails', '~>5.4.5.0'
 gem 'active_attr'
 gem "jquery-validation-rails"
 
