@@ -1,6 +1,7 @@
 //
 //=require jquery.min
 //=require jquery_ujs
+//= require foundation
 //=require foundation
 //=require modernizr
 //=require jquery.scrollTo.min
@@ -9,3 +10,5 @@
 //= require jquery.validate.additional-methods
 
 
+
+$(function(){ $(document).foundation(); });

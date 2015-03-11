@@ -55,7 +55,7 @@
 // $rem-base: 16px;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
-@import "functions";
+@import "foundation/functions";
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
@@ -77,7 +77,7 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // $include-html-grid-classes: $include-html-classes;
- $include-xl-html-grid-classes: true;
+// $include-xl-html-grid-classes: false;
 
 // $row-width: rem-calc(1000);
 // $total-columns: 12;
@@ -86,44 +86,16 @@ $include-html-global-classes: $include-html-classes;
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
+// We use these to define default font stacks
+// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+// $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+// $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+
 // We use these to define default font weights
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;
 
-// Global
-
-// We use these to define default font weights
-// $font-weight-normal: normal !default;
-// $font-weight-bold: bold !default;
-
-// We use these to control various global styles
-	$hpc-navy: #0B1042;
-	$off-white	: #EBECFF;
-	$body-bg: $off-white;
-// $body-font-color: $jet;
-	$body-font-family: "Droid Sans", Helvetica, Arial, sans-serif;
-// $font-weight-normal:normal;
-// $body-font-weight: $font-weight-normal;
-// $body-font-style: normal;
-
-// We use this to control font-smoothing
-// $font-smoothing: antialiased;
-
-// We use these to control text direction settings
-// $text-direction: ltr;
-// $opposite-direction: right;
-// $default-float: left;
-// $last-child-float: $opposite-direction;
-
-// We use these as default colors throughout
-	$primary-color: #0B1A70;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
-	
- $white       : #FFFFFF;
+// $white       : #FFFFFF;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -143,8 +115,32 @@ $include-html-global-classes: $include-html-classes;
 // $jet         : #222222;
 // $black       : #000000;
 
+// We use these as default colors throughout
+// $primary-color: #008CBA;
+// $secondary-color: #e7e7e7;
+// $alert-color: #f04124;
+// $success-color: #43AC6A;
+// $warning-color: #f08a24;
+// $info-color: #a0d3e8;
+
+// We use these to control various global styles
+// $body-bg: $white;
+// $body-font-color: $jet;
+// $body-font-family: $font-family-sans-serif;
+// $body-font-weight: $font-weight-normal;
+// $body-font-style: normal;
+
+// We use this to control font-smoothing
+// $font-smoothing: antialiased;
+
+// We use these to control text direction settings
+// $text-direction: ltr;
+// $opposite-direction: right;
+// $default-float: left;
+// $last-child-float: $opposite-direction;
+
 // We use these to make sure border radius matches unless we want it different.
- $global-radius: 5px;
+// $global-radius: 3px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
@@ -155,19 +151,19 @@ $include-html-global-classes: $include-html-classes;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
- $small-range: (0em, 40em);
- //$medium-range: (40.063em, 75em);
-// $large-range: (75.063em, 90em);
+// $small-range: (0em, 40em);
+// $medium-range: (40.063em, 64em);
+// $large-range: (64.063em, 90em);
 // $xlarge-range: (90.063em, 120em);
 // $xxlarge-range: (120.063em, 99999999em);
 
- $screen: "only screen";
+// $screen: "only screen";
 
 // $landscape: "#{$screen} and (orientation: landscape)";
 // $portrait: "#{$screen} and (orientation: portrait)";
 
-$small-up: $screen;
-$small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
+// $small-up: $screen;
+// $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
 
 // $medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
 // $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
@@ -202,7 +198,7 @@ $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
- $header-font-color: $white;
+// $header-font-color: $jet;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -248,7 +244,7 @@ $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
 
 // We use these to style <code> tags
 // $code-color: $oil;
-// $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
+// $code-font-family: $font-family-monospace;
 // $code-font-weight: $font-weight-normal;
 // $code-background-color: scale-color($secondary-color, $lightness: 70%);
 // $code-border-size: 1px;
@@ -316,21 +312,20 @@ $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
 // $microformat-abbr-font-weight: $font-weight-bold;
 // $microformat-abbr-font-decoration: none;
 
-
 // 01. Accordion
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // $include-html-accordion-classes: $include-html-classes;
 
 // $accordion-navigation-padding: rem-calc(16);
- //$accordion-navigation-bg-color: $hpc-navy  ;
- //$accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: 10%);
- //$accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: 10%);
- //$accordion-navigation-font-color: $white;
+// $accordion-navigation-bg-color: $silver;
+// $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
+// $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
+// $accordion-navigation-font-color: $jet;
 // $accordion-navigation-font-size: rem-calc(16);
 // $accordion-navigation-font-family: $body-font-family;
 
-// $accordion-content-padding: $column-gutter/2;
+// $accordion-content-padding: ($column-gutter/2);
 // $accordion-content-active-bg-color: $white;
 
 // 02. Alert Boxes
@@ -385,7 +380,6 @@ $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
 // $block-grid-elements: 12;
 // $block-grid-default-spacing: rem-calc(20);
 // $align-block-grid-to-grid: false;
-
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
 // $block-grid-media-queries: true;
@@ -451,11 +445,11 @@ $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
 // $button-function-factor: -20%;
 
 // We use these to control button border and hover styles.
-$button-border-width: 1px;
-$button-border-style: solid;
+// $button-border-width: 0px;
+// $button-border-style: solid;
 // $button-bg-color: $primary-color;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
-$button-border-color: $off-white;
+// $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
 // $secondary-button-border-color: $secondary-button-bg-hover;
 // $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
@@ -464,7 +458,7 @@ $button-border-color: $off-white;
 // $alert-button-border-color: $alert-button-bg-hover;
 
 // We use this to set the default radius used throughout the core.
-$button-radius: $global-radius;
+// $button-radius: $global-radius;
 // $button-round: $global-rounded;
 
 // We use this to set default opacity and cursor for disabled buttons.
@@ -478,7 +472,7 @@ $button-radius: $global-radius;
 
 // Sets the margin for the right side by default, and the left margin if right-to-left direction is used
 // $button-bar-margin-opposite: rem-calc(10);
-//$button-group-border-width: 3px;
+// $button-group-border-width: 1px;
 
 // 07. Clearing
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -551,11 +545,15 @@ $button-radius: $global-radius;
 // $f-dropdown-font-size: rem-calc(14);
 // $f-dropdown-list-padding: rem-calc(5, 10);
 // $f-dropdown-line-height: rem-calc(18);
-// $f-dropdown-list-hover-bg: $smoke  ;
+// $f-dropdown-list-hover-bg: $smoke;
 // $dropdown-mobile-default-float: 0;
 
 // We use this to control the styles for when the dropdown has custom content.
 // $f-dropdown-content-padding: rem-calc(20);
+
+// Default radius for dropdown.
+// $f-dropdown-radius: $global-radius;
+
 
 // 09. Dropdown Buttons
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -575,25 +573,25 @@ $button-radius: $global-radius;
 // $dropdown-button-padding-tny: $button-pip-tny * 7;
 // $dropdown-button-pip-size-tny: $button-pip-tny;
 // $dropdown-button-pip-opposite-tny: $button-pip-tny * 3;
-// $dropdown-button-pip-top-tny: -$button-pip-tny / 2 + rem-calc(1);
+// $dropdown-button-pip-top-tny: (-$button-pip-tny / 2) + rem-calc(1);
 
 // We use these to style small dropdown buttons
 // $dropdown-button-padding-sml: $button-pip-sml * 7;
 // $dropdown-button-pip-size-sml: $button-pip-sml;
 // $dropdown-button-pip-opposite-sml: $button-pip-sml * 3;
-// $dropdown-button-pip-top-sml: -$button-pip-sml / 2 + rem-calc(1);
+// $dropdown-button-pip-top-sml: (-$button-pip-sml / 2) + rem-calc(1);
 
 // We use these to style medium dropdown buttons
 // $dropdown-button-padding-med: $button-pip-med * 6 + rem-calc(3);
 // $dropdown-button-pip-size-med: $button-pip-med - rem-calc(3);
 // $dropdown-button-pip-opposite-med: $button-pip-med * 2.5;
-// $dropdown-button-pip-top-med: -$button-pip-med / 2 + rem-calc(2);
+// $dropdown-button-pip-top-med: (-$button-pip-med / 2) + rem-calc(2);
 
 // We use these to style large dropdown buttons
 // $dropdown-button-padding-lrg: $button-pip-lrg * 5 + rem-calc(3);
 // $dropdown-button-pip-size-lrg: $button-pip-lrg - rem-calc(6);
 // $dropdown-button-pip-opposite-lrg: $button-pip-lrg * 2.5;
-// $dropdown-button-pip-top-lrg: -$button-pip-lrg / 2 + rem-calc(3);
+// $dropdown-button-pip-top-lrg: (-$button-pip-lrg / 2) + rem-calc(3);
 
 // 10. Flex Video
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -669,6 +667,7 @@ $button-radius: $global-radius;
 // $input-error-message-font-weight: $font-weight-normal;
 // $input-error-message-font-style: italic;
 // $input-error-message-font-color: $white;
+// $input-error-message-bg-color: $alert-color;
 // $input-error-message-font-color-alt: $oil;
 
 // We use this to style the glowing effect of inputs when focused
@@ -680,7 +679,6 @@ $button-radius: $global-radius;
 // $select-bg-color: $ghost;
 // $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%);
 
-
 // 12. Icon Bar
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -688,9 +686,11 @@ $button-radius: $global-radius;
 // $include-html-icon-bar-classes: $include-html-classes;
 // $icon-bar-bg: $oil;
 // $icon-bar-font-color: $white;
+// $icon-bar-font-color-hover: $icon-bar-font-color;
 // $icon-bar-font-size: 1rem;
 // $icon-bar-hover-color: $primary-color;
 // $icon-bar-icon-color: $white;
+// $icon-bar-icon-color-hover: $icon-bar-icon-color;
 // $icon-bar-icon-size: 1.875rem;
 // $icon-bar-image-width: 1.875rem;
 // $icon-bar-image-height: 1.875rem;
@@ -717,7 +717,7 @@ $button-radius: $global-radius;
 // We use this to control the list items
 // $inline-list-display: block;
 
-// We use this to control any elments within list items
+// We use this to control any elements within list items
 // $inline-list-children-display: block;
 
 // 14. Joyride
@@ -733,7 +733,7 @@ $button-radius: $global-radius;
 // $joyride-tip-radius: 4px;
 // $joyride-tip-position-offset: 22px;
 
-// Here, we're setting the tip dont styles
+// Here, we're setting the tip font styles
 // $joyride-tip-font-color: $white;
 // $joyride-tip-font-size: rem-calc(14);
 // $joyride-tip-header-weight: $font-weight-bold;
@@ -782,7 +782,7 @@ $button-radius: $global-radius;
 // $include-html-label-classes: $include-html-classes;
 
 // We use these to style the labels
-// $label-padding: rem-calc(4 8 6);
+// $label-padding: rem-calc(4 8 4);
 // $label-radius: $global-radius;
 
 // We use these to style the label text
@@ -797,13 +797,11 @@ $button-radius: $global-radius;
 
 // $include-html-magellan-classes: $include-html-classes;
 
-$magellan-bg: $hpc-navy;
+// $magellan-bg: $white;
 // $magellan-padding: 0 !important;
 
 // 18. Off-canvas
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-
-// $include-html-off-canvas-classes: $include-html-classes;
 
 // $include-html-off-canvas-classes: $include-html-classes;
 
@@ -827,6 +825,7 @@ $magellan-bg: $hpc-navy;
 // Off Canvas Menu Variables
 // $off-canvas-width: rem-calc(250);
 // $off-canvas-bg: $oil;
+// $off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: -30%);
 
 // Off Canvas Menu List Variables
 // $off-canvas-label-padding: 0.3rem rem-calc(15);
@@ -995,7 +994,7 @@ $magellan-bg: $hpc-navy;
 // $price-title-font-family: $body-font-family;
 
 // We use these to control the price styles
-// $price-money-bg: $vapor  ;
+// $price-money-bg: $vapor;
 // $price-money-padding: rem-calc(15 20);
 // $price-money-align: center;
 // $price-money-color: $oil;
@@ -1025,7 +1024,6 @@ $magellan-bg: $hpc-navy;
 // $price-cta-bg: $white;
 // $price-cta-align: center;
 // $price-cta-padding: rem-calc(20 20 0);
-
 
 // 23. Progress Bar
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1057,7 +1055,7 @@ $magellan-bg: $hpc-navy;
 
 // $include-html-range-slider-classes: $include-html-classes;
 
-// These variabels define the slider bar styles
+// These variables define the slider bar styles
 // $range-slider-bar-width: 100%;
 // $range-slider-bar-height: rem-calc(16);
 
@@ -1072,7 +1070,7 @@ $magellan-bg: $hpc-navy;
 // $range-slider-vertical-bar-width: rem-calc(16);
 // $range-slider-vertical-bar-height: rem-calc(200);
 
-// These variabels define the slider handle styles
+// These variables define the slider handle styles
 // $range-slider-handle-width: rem-calc(32);
 // $range-slider-handle-height: rem-calc(22);
 // $range-slider-handle-position-top: rem-calc(-5);
@@ -1095,9 +1093,10 @@ $magellan-bg: $hpc-navy;
 // $reveal-overlay-bg-old: $black;
 
 // We use these to control the style of the modal itself.
- $reveal-modal-bg: $hpc-navy;
+// $reveal-modal-bg: $white;
 // $reveal-position-top: rem-calc(100);
 // $reveal-default-width: 80%;
+// $reveal-max-width: $row-width;
 // $reveal-modal-padding: rem-calc(20);
 // $reveal-box-shadow: 0 0 10px rgba($black,.4);
 
@@ -1144,7 +1143,7 @@ $magellan-bg: $hpc-navy;
 // $side-nav-font-weight: $font-weight-normal;
 // $side-nav-font-weight-active: $side-nav-font-weight;
 // $side-nav-font-family: $body-font-family;
-// $side-nav-active-font-family: $side-nav-font-family;
+// $side-nav-font-family-active: $side-nav-font-family;
 
 // We use these to control heading styles.
 // $side-nav-heading-color: $side-nav-link-color;
@@ -1215,7 +1214,6 @@ $magellan-bg: $hpc-navy;
 // $sub-nav-border-radius: 3px;
 // $sub-nav-font-color-hover: scale-color($sub-nav-font-color, $lightness: -25%);
 
-
 // We use these to control the active item styles
 // $sub-nav-active-font-weight: $font-weight-normal;
 // $sub-nav-active-bg: $primary-color;
@@ -1226,7 +1224,6 @@ $magellan-bg: $hpc-navy;
 
 // $sub-nav-item-divider: "";
 // $sub-nav-item-divider-margin: rem-calc(12);
-
 
 // 29. Switch
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1274,7 +1271,7 @@ $magellan-bg: $hpc-navy;
 
 // These control the background color for the table and even rows
 // $table-bg: $white;
-// $table-even-row-bg: $snow  ;
+// $table-even-row-bg: $snow;
 
 // These control the table cell border style
 // $table-border-style: solid;
@@ -1294,7 +1291,8 @@ $magellan-bg: $hpc-navy;
 // $table-row-font-color: $jet;
 // $table-line-height: rem-calc(18);
 
-// These are for controlling the display and margin of tables
+// These are for controlling the layout, display and margin of tables
+// $table-layout: auto;
 // $table-display: table-cell;
 // $table-margin-bottom: rem-calc(20);
 
@@ -1313,7 +1311,7 @@ $magellan-bg: $hpc-navy;
 // $tabs-navigation-font-family: $body-font-family;
 
 // $tabs-content-margin-bottom: rem-calc(24);
-// $tabs-content-padding: $column-gutter/2;
+// $tabs-content-padding: ($column-gutter/2);
 
 // $tabs-vertical-navigation-margin-bottom: 1.25rem;
 
@@ -1366,12 +1364,11 @@ $magellan-bg: $hpc-navy;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-
-$topbar-bg-color: $hpc-navy;
-$topbar-bg: $topbar-bg-color;
+// $topbar-bg-color: $oil;
+// $topbar-bg: $topbar-bg-color;
 
 // Height and margin
- $topbar-height: 80px;
+// $topbar-height: rem-calc(45);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1379,9 +1376,10 @@ $topbar-bg: $topbar-bg-color;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
- $topbar-dropdown-bg: $hpc-navy;
+// $topbar-dropdown-bg: $oil;
 // $topbar-dropdown-link-color: $white;
- $topbar-dropdown-link-bg: $hpc-navy;
+// $topbar-dropdown-link-bg: $oil;
+// $topbar-dropdown-link-bg-hover: $oil;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
@@ -1393,16 +1391,18 @@ $topbar-bg: $topbar-bg-color;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
- $topbar-link-font-size: rem-calc(15);
+// $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-	$topbar-link-bg-color-hover: $primary-color;
-	$topbar-link-bg-hover: $primary-color;
- 	$topbar-link-bg-active: $primary-color;
-	$topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+// $topbar-link-bg-color-hover: $charcoal;
+// $topbar-link-bg-hover: $oil;
+// $topbar-link-bg-active: $primary-color;
+// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
-// $topbar-link-padding: $topbar-height / 3;
+// $topbar-link-padding: ($topbar-height / 3);
+// $topbar-back-link-size: $h5-font-size;
+// $topbar-link-dropdown-padding: 20px;
 
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;
@@ -1425,8 +1425,8 @@ $topbar-bg: $topbar-bg-color;
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
-$topbar-breakpoint: 900px; // Change to 9999px for always mobile layout
-$topbar-media-query: "only screen and (min-width:#{$topbar-breakpoint})" !default;
+// $topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
+// $topbar-media-query: $medium-up;
 
 // Divider Styles
 // $topbar-divider-border-bottom: solid 1px  scale-color($topbar-bg-color, $lightness: 13%);
@@ -1443,4 +1443,3 @@ $topbar-media-query: "only screen and (min-width:#{$topbar-breakpoint})" !defaul
 // $include-table-visibility-classes: true;
 // $include-legacy-visibility-classes: true;
 // $include-accessibility-classes: true;
-

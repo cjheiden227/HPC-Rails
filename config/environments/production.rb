@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.secret_key_base='07344a9ea1f445a1da9c9d072be78658e3fb87ab85d56f91065f30704106a4353574bfc8b4ddf87362fa5bfde345fe8c3e92933a6c434f785d0b1fdbeb5b09aa'
   config.action_mailer.delivery_method = :smtp
 # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
@@ -43,6 +43,7 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
+  config.assets.precompile=['*.js', '*.css', '*.scss']
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
