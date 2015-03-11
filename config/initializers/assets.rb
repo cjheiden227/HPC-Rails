@@ -16,3 +16,6 @@ Rails.application.config.assets.precompile += %w( foundation.min.js )
 Rails.application.config.assets.precompile += %w( app.js )
 Rails.application.config.assets.precompile += %w( jquery.stickyNavbar.min.js )
 Rails.application.config.assets.precompile += %w( spin.min.js )
+Rails.application.config.assets.precompile += %w( *.ttf )
+Rails.application.config.assets.precompile += %w( *.woff )
+
