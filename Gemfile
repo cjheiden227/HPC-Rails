@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 ruby '2.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.6'
+gem 'rails', '4.2.0'
+gem 'mysql'
 
-
-gem 'pg'
+gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -50,4 +50,3 @@ group :development, :test do
   gem 'spring', '1.3.3'
 end
 
-gem 'rails_12factor', group: :production
