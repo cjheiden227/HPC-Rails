@@ -18,9 +18,9 @@ test:
   pool: 5
   timeout: 5000
 
+#
 production:
-  adapter: mysql
-  encoding: utf8
-  database: rails
-  username: rails
-  password: Btc3dz83M2
+  <<: *default
+  database: postgres-app_production
+  username: postgres-app
+  password: <%= ENV['POSTGRES-APP_DATABASE_PASSWORD'] %>
