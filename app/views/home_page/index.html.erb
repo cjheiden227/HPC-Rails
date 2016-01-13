@@ -336,10 +336,77 @@
        </div>
     </div>
     <!-- End Locations -->
-     <div class="arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
-              <polygon points="0,0 82,0 41, 41" fill="#0b1042" fill-opacity="1">
-            </svg>
+      <div class="arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
+          <polygon points="0,0 82,0 41, 41" fill="#0b1042" fill-opacity="1">
+        </svg>
+      </div>
+    <div id="documents" class="scrollto">
+      <a class="anchor" name="document"></a>
+      <div class="row fullWidth ">
+        <div class="header small-12 columns">
+              <h1><%= image_tag('squigs.png', width: '50') %>Documents<%= image_tag('squigs.png', width: '50') %></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 text-center small-centered columns">
+          <h2>For Patients</h2>
+          <ul class="small-block-grid-1 medium-block-grid-3">
+            <li>
+              <%=link_to("https://www.filestackapi.com/api/file/PROm8QqVTt6KzAy2e37f", class: "doc") do%>
+              <caption>Treatment Program<br><i class="realbig-icon fi-page-export-doc large"></i> </caption>
+              <%end%>
+            </li>
+            <li>
+              <%=link_to("https://www.filestackapi.com/api/file/8YWi9P4SSQeX9FGmW2pG", class: "doc") do%>
+              <caption>PTP Designation<br><i class="realbig-icon fi-page-export-doc large"></i> </caption>
+              <%end%>
+            </li>          
+            <li>
+              <%=link_to("https://www.filestackapi.com/api/file/4LTZY4tURXKrit8LVrCr", class: "doc") do%>
+              <caption>Physician-Patient Agreement<br><i class="realbig-icon fi-page-export-doc large"></i> </caption>
+              <%end%>
+            </li>
+           </ul>
+        </div>    
+        <div class="small-12 columns">
+          <h2>Articles</h2>
+          <ul class="small-block-grid-1 medium-block-grid-2">
+            <li>
+            <%=link_to("https://www.filestackapi.com/api/file/XnSfqn4QZ62igcbD40Nd", class: "doc") do%>
+              <caption>Guidelines on Guidelines <br> by Thomas Curtis, M.D. <br><i class="realbig-icon fi-page-export-doc large"></i> </caption>
+            <%end%>
+            </li>  
+           <li>
+            <%=link_to("https://www.filestackapi.com/api/file/h15PIIcSyGzw95QJCpwI", class: "doc") do%>
+              <caption>Psyche Injury  <br> by Thomas Curtis, M.D. <br><i class="realbig-icon fi-page-export-doc large"></i> </caption>
+            <%end%>
+            </li>
+          </ul>
+        </div>   
+      </div>
+        <div class="s-f-container section-footer fullWidth row">
+             <div class="arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
+                <polygon points="0,0 80,0 40, 40" fill="#EBECFF" fill-opacity="1">
+              </svg>
+            </div>
+        <div class="row">
+          <div class="small-5 small-centered columns">
+            <div class="margin-top-20 margin-bottom-40 section-footer-link">
+              <a id="location_footer" href="#locations">
+                <%=image_tag('logo_alt.png', class: 'section-footer-logo')%>
+                <p>Back to Top </p>
+              </a>    
+            </div>                
+          </div>
+        </div> 
+      </div>
+    </div>
+    <div class="arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
+          <polygon points="0,0 82,0 41, 41" fill="#0b1042" fill-opacity="1">
+        </svg>
       </div>
     <!-- Begin Contact -->
     <div id="contact" class="scrollto">
