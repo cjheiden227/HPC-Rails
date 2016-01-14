@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hehkqulpp
+  api_key: '235457732317343'
+  api_secret: CPPTTGdb27-bN4Tj-Rfdce6Wq0c
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hehkqulpp
+  api_key: '235457732317343'
+  api_secret: CPPTTGdb27-bN4Tj-Rfdce6Wq0c
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hehkqulpp
+  api_key: '235457732317343'
+  api_secret: CPPTTGdb27-bN4Tj-Rfdce6Wq0c
+  enhance_image_tag: true
+  static_image_support: false
