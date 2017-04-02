@@ -20,7 +20,8 @@ $(document).ready(function(){
 
     });
 
-    $('#service_contact').on('click', function(e){
+    $('.service_contact').on('click', function(e){
+       
         $.scrollTo('#contact', 600, {offset:{top:-60, left:0}});
 
     });
