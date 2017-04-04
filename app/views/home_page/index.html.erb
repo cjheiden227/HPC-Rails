@@ -70,7 +70,7 @@
             <ul data-equalizer="column2" class="pricing-table">
               <div data-equalizer-watch="column2">
               <li class="title">Expert Treatment</li>
-              <li class=""><%=image_tag('icon3.jpg', class: 'big-icon')%></li>
+              <li class=""><%=image_tag('icon3.jpg', class: '')%></li>
               <li class="bullet-item">Indvidiualized Therapy</li>
               <li class="description">Our therapists will work with you on a personal basis to help you cope with your injury and its aftermath.  Whether it's getting you back to work, or accepting your disability, our therapists are here to listen.</li>
               <li class="bullet-item">Expert Medication Management</li>
@@ -121,7 +121,7 @@
          <div class="small-12 medium-4 columns">
           <div class="map-button">
             <div id="vn" class="mapWrap text-center">
-              <a><%=image_tag('vn.jpg', class: 'big-icon')%>
+              <%=image_tag('vn.jpg', class: 'big-icon')%>
                 <p class="shadow initial-title"> Van Nuys <br> <small>Monday-Friday</small></p>
                 <div class="mapDescriptionWrapper">
                   <div class="mapDescription">
@@ -129,14 +129,14 @@
                     <p>Van Nuys, CA 91411</p>
                   </div>
                 </div>
-              </a>
+                
             </div>
           </div>
         </div>
         <div class="small-12 medium-4 columns"> 
           <div class="map-button">
             <div id="la" class="mapWrap">
-              <a><%=image_tag('lb.jpg', class: 'big-icon')%>
+              <%=image_tag('lb.jpg', class: 'big-icon')%>
                 <p class="shadow initial-title">Long Beach <br> <small>Mondays and Fridays</small></p>
                 <div class="mapDescriptionWrapper">
                   <div class="mapDescription">
@@ -144,14 +144,13 @@
                     <p>Long Beach, CA 90807</p>
                   </div>
                 </div>
-              </a>
             </div>
           </div>
         </div>
         <div class="small-12 medium-4 columns"> 
           <div class="map-button">
             <div id="lb" class="mapWrap">
-              <a><%=image_tag('la.jpg', class: 'big-icon')%>
+              <%=image_tag('la.jpg', class: 'big-icon')%>
                 <p class="shadow initial-title">Los Angeles <br> <small>Wednesdays</small> </p>
                 <div class="mapDescriptionWrapper">
                   <div class="mapDescription">
@@ -159,7 +158,7 @@
                     <p>Los Angeles, CA 90020</p>
                   </div>
                 </div>
-              </a>
+              
             </div>
           </div>
         </div>
@@ -321,7 +320,7 @@
   </div>
   <div class="margin-top-40 row">
     <div class="small-12 medium-10 small-centered columns">
-       <div class="panel shadow row">
+       <div class="panel big-icon row">
         <h3>Call or Fax </h3>
          <div class="small-12 medium-4 columns">
 
@@ -359,7 +358,7 @@
     </div>
      
      <h2 class="margin-top-20">For Referrals, Fill Out the Form Below.</h2>
-    <div class="form-header shadow margin-top-20 margin-bottom-40 small-centered small-12 medium-8 large-6 columns">
+    <div class="form-header big-icon margin-top-20 margin-bottom-40 small-centered small-12 medium-8 large-6 columns">
      <%= render 'form' %>
      <div id="spinner"></div> 
    </div>

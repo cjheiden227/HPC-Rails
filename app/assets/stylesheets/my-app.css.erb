@@ -238,17 +238,15 @@ svg{
 }
 
 .big-icon{
+	display:block;
 	border: 1px solid #0b1042;
 	-webkit-box-shadow: 1px 1px 1px 0px rgba(11,16,66,1);
 	-moz-box-shadow: 1px 1px 1px 0px rgba(11,16,66,1);
 	box-shadow: 1px 1px 1px 0px rgba(11,16,66,1);
-	padding: 0;
+	/*padding: 0;*/
 }
 
-div>.big-icon{
-	max-width: 75%;
 
-}
 
 .big-icon>img{
 	width: 100%;
@@ -401,12 +399,22 @@ li.title{
 	background-color: rgba(11, 16, 66, 1);
 	color: #FFF !important;
 	position: absolute;
-	top: 45%;
+	top: 30%;
 	width: 100%;
 	font-size: 1.5rem;
 	opacity: .85;
+	padding-bottom: 4%;
+	padding-top:2%;
 }
 
+.initial-title>small{
+	display: block;
+
+	margin: 0 auto;
+	border-top: 1px solid white;
+	width: 75%;
+
+}
 .direction{
 	position: absolute;
 }
@@ -476,6 +484,9 @@ label .error {
 	color: #0b1042;
 }
 
+#contact .panel{
+	background-color: #f9f9ff;
+}
 .form-header{
 	padding: 2rem;
 /*	border: 1px solid #6C6F8D;*/
