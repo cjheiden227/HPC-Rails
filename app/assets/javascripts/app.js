@@ -8,14 +8,20 @@ $('.navbarWrapper').stickyNavbar({
 });
 
 $(document).ready(function(){
+    $('.sub-nav dd').click(function(){
+        $('.sub-nav').find('.active').removeClass("active");
+        $(this).addClass('active');
+    });
 
+    
     //Set up scrolling behavior
     $('#banner_contact').on('click', function(e){
         $.scrollTo('#contact', 600, {offset:{top:-120, left:0}});
 
     });
 
-    $('#service_contact').on('click', function(e){
+    $('.service_contact').on('click', function(e){
+       
         $.scrollTo('#contact', 600, {offset:{top:-60, left:0}});
 
     });

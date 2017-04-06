@@ -1,445 +1,372 @@
 
-   <!-- Jumbotron -->
-   <div id="home" class="shadow scrollto jumbotron">
-    <!-- <img  src="img/jumbo_bg.jpg"> -->
-      <div class="banner">
-        <div class="banner-area">
-         <div class="row">
-            <div class="small-12 columns">
-              <h1 class="banner-text">Hamlin Psyche Center</h1>
-              <div class="row">
-                <div class="small-12 small-centered columns divider"></div>
-                <div class="small-12 small-centered columns">
-                  <h4 class="banner-text">A Psychiatric Clinic </h5>
-                  <div class="banner-sub">
-                  <p class="banner-text"> Serving the Los Angeles area, providing Workers' Compensation evaluations and Disability evaluations as well as treatment for industrial injuries.</p>
-                  </div>
-                </div>
-                <div class="button-group radius stack-for-small small-centered text-center columns buttons">
-                    <a id="banner_contact" class="button large">Get an Appointment</a>
-                    <a id="banner_service" class="button large">Learn More</a>            
-                </div>
-              </div>
-           </div>
-          </div>
-          </div>
-        </div>
-      </div>
-  <!-- End Jumbotron -->
-
-  <!-- Sub-Content -->
-  <div id="sub_content">
-    <a class="anchor" name="services-section"></a>
-    <!-- Begin Services -->
-    <div id="services" class="scrollto">
-      <div class="row fullWidth">
-        <div class="header small-12 columns">
-                <h1><%= image_tag('squigs.png', width: '50') %>Services<%= image_tag('squigs.png', width: '50') %></h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="small-12 columns"> 
-            <!-- Medium Screen Services; Show only on medium screens -->
-            <div class="show-for-medium-up content">
-              <div class="row">
-                <div class="small-12 columns">
-                  <div data-equalizer class="row">
-                    <h3><%= image_tag('squigs.png', width: '50') %>Workers' Compensation Evaluations<%= image_tag('squigs.png', width: '50') %></h3>
-                    <div data-equalizer-watch class="margin-top-15 margin-bottom-40 alt-border small-6 columns">
-                      <div>
-                        <%=image_tag('icon1.jpg', class: 'icon-right big-icon')%>
-                      </div>
-                    </div>
-                    <div data-equalizer-watch class="margin-top-15 small-6 columns">
-                      <div class="service-row row">
-                        <div class="services small-10 columns small-centered">
-                          <p class="s-para-left">The Hamlin Psyche Center is a psychiatric practice with over 30 years experience in psychiatric evaluation and medical-legal reporting and over 25 years experience in evaluating and treating injured workers.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-equalizer class="row">
-                    <h3><%= image_tag('squigs.png', width: '50') %>Disability Evaluations<%= image_tag('squigs.png', width: '50') %></h3>
-                    <div data-equalizer-watch class="margin-top-15 margin-bottom-40 alt-border small-6 columns">
-                      <div class="service-row row">
-                        <div class="services small-10 columns small-centered">
-                           <p class="s-para-right">The Hamlin Psyche Center also provides evaluations for our patients with Social Security and Long and Short-Term Disability claims on an as-needed basis.</p>
-                         </div>
-                       </div>
-                    </div>
-                    <div data-equalizer-watch class="margin-top-15 small-6 columns">
-                      <div>
-                        <%=image_tag('icon2.png', class: 'icon-left big-icon')%>
-                      </div>  
-                    </div>
-                  </div>
-                  <div data-equalizer class="row">
-                    <h3><%= image_tag('squigs.png', width: '50') %>Psychotherapy and Psychiatric Management<%= image_tag('squigs.png', width: '50') %></h3>
-                    <div data-equalizer-watch class="margin-top-15 margin-bottom-40 alt-border small-6 columns">
-                      <div>
-                        <%=image_tag('icon3.jpg', class: 'icon-right big-icon')%>
-                      </div>  
-
-                    </div>
-                    <div data-equalizer-watch class="margin-top-15  small-6 columns">
-                      <div class="service-row row">
-                        <div class="services small-10 columns small-centered">
-                          <p class="s-para-left">Our treatment professionals specialize in providing psychotherapy and psychiatric medication management services for industrial injuries.  
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Medium Screen Services -->
-
-            <!-- Small Screen Services; Show only on small screens -->
-            <div class="show-for-small-only content">
-              <div class="row">
-                <div class=" small-12 columns">
-                      <h3>Workers' Compensation Evaluations</h3>
-                      <div class="small-centered small-12 columns big-icon">
-                        <%=image_tag('icon1.jpg')%>
-                      </div>
-                      <p class="s-para">The Hamlin Psyche Center is a psychiatric practice with over 30 years experience in psychiatric evaluation and medical-legal reporting and over 25 years experience in evaluating and treating injured workers.</p>
-                    
-                      <h3>Disability Evaluations</h3>
-                      <div class="small-centered small-12 columns big-icon">
-                        <%=image_tag('icon2.png')%>
-                      </div>
-                      <p class="s-para">The Hamlin Psyche Center also provides evaluations for our patients with Social Security and Long and Short-Term Disability claims on an as-needed basis.</p>
-                  
-                      <h3>Psychotherapy and Psychiatric Management</h3>
-                      <div class="small-centered small-12 columns big-icon">
-                        <%=image_tag('icon3.jpg')%>
-                      </div>
-                      <p class="s-para">Our treatment professionals specialize in providing psychotherapy and psychiatric medication management services for industrial injuries.  
-                      </p>
-                    
-                </div>
-            </div>
-          </div>
-          <!-- End Small Screen Services -->
-
-          </div>
-        </div>
-        <div class="s-f-container section-footer fullWidth row">
-          <div class="arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
-              <polygon points="0,0 80,0 40, 40" fill="#EBECFF" fill-opacity="1">
-            </svg>
-          </div>
-          <div class="margin-top-40 small-12 text-center columns">
-          <div class="show-for-medium-up">
-            <h3 class="section-footer-text">
-              <%=image_tag('squigs(alt).png', width: '50')%>
-              Any questions? Need an appointment? 
-              <%=image_tag('squigs(alt).png', width: '50')%>
-            </h3>
-          </div>
-          <div class="show-for-small-only">
-              <h3 class="section-footer-text">
-              Any questions? <br>
-              Need an appointment? 
-            </h3>
-          </div>
-            <a id="service_contact" class="margin-top-40 margin-bottom-40 alt-button button radius large">Contact the Center</a>             
-          </div>
-          <div class="small-12 columns">
-            <div class="row">
-              <div class="small-5 small-centered columns">
-                <div class=" margin-bottom-40 section-footer-link">
-                  <a id="service_footer" href="#services">
-                    <%=image_tag('logo_alt.png', class: 'section-footer-logo')%>
-                    <p>Back to Top </p>
-                  </a>    
-                </div>                
-              </div>
-            </div>
-          </div>
-
-        </div>          
-      </div>
-      <!-- End Services -->
-       <div class="arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
-              <polygon points="0,0 82,0 41, 41" fill="#0b1042" fill-opacity="1">
-            </svg>
-      </div>
-      <!-- Begin Locations -->
-     <div id="locations" class="scrollto">
-      <div class="row fullWidth ">
-        
-        <div class="header small-12 columns">
-              <h1><%= image_tag('squigs.png', width: '50') %>Locations<%= image_tag('squigs.png', width: '50') %></h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class=" small-12 columns">
-          <div class="content">
-            <div class="row">
-              <div class="subheader small-12 columns">
-                <h3>The Hamlin Psyche Center offers evaluation and treatment services throughout the Los Angeles area.  Psychological healing is not far away.</h3>
-                <ul id="upperpane" class="title small-block-grid-3" data-equalizer>  
-                    <li data-equalizer-watch> <h4>Accessibile Locations</h4></li>
-                    <li data-equalizer-watch><h4>Here to Help </h4></li>
-                    <li data-equalizer-watch><h4>Full-Service Clinics</h4></li>    
-                </ul>
-                <ul id="pane" class="small-block-grid-3" data-equalizer>  
-                    <li data-equalizer-watch> <i class="realbig-icon fi-map large"></i><p>Convenient locations in Van Nuys and Long Beach.</p></li>
-                    <li data-equalizer-watch><i class="realbig-icon fi-torsos-all large"></i><p>Our clinics are staffed with dedicated professionals.</p></li>
-                    <li data-equalizer-watch><i class="realbig-icon fi-first-aid large"></i><p>Treatment and evaluation available at all locations.</p></li>    
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="small-12 small-centered columns">
-                <h2>
-                  <%= image_tag('squigs.png', width: '50') %>
-                    Directions
-                  <%= image_tag('squigs.png', width: '50') %>
-                </h2>
-                <p>Click on the images to get a map to our clinics.</p>
-                <div class="row">
-                  <div class="small-12 medium-4 margin-bottom-20 columns">
-                    <div class="small-6 medium-12 columns">
-                      <div class="map-button">
-                      <div id="vn" class="mapWrap text-center">
-                        <a class="map-link" data-map="14531 Hamlin Street Van Nuys CA 91411"><%=image_tag('vn.jpg', class: 'big-icon')%>
-                        <p class="shadow initial-title">Van Nuys</p>
-                        <div class="mapDescriptionWrapper">
-                          <div class="mapDescription">
-                            <p>14531 Hamlin Street</p>
-                            <p>Van Nuys, CA 91411</p>
-                          </div>
-                        </div>
-                        </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="small-6 medium-12 columns"> 
-                      <div class="map-button">
-                        <div id="lb" class="mapWrap">
-                          <a class="map-link" data-map="4300 Long Beach Blvd. Long Beach CA 90807"><%=image_tag('lb.jpg', class: 'big-icon')%>
-                            <p class="shadow initial-title">Long Beach </p>
-                            <div class="mapDescriptionWrapper">
-                              <div class="mapDescription">
-                                <p>4300 Long Beach Blvd.</p>
-                                <p>Long Beach, CA 90807</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div> 
-                    </div>
-                </div>
-                <div class="small-12 medium-8 columns">
-                  <div class="row">
-                   <iframe class="map-target small-12 columns big-icon"
-                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCnXy5N52r2BsyqhjIU-T4shbIqgeaf34g&q=14531+Hamlin+Street+Van+Nuys+CA+91411">
-                  </iframe>
-                  </div>
-              </div>
-                </div>
-              </div>
-            </div>
-          
-          </div>
-        </div>
-      </div>
-      <div class="s-f-container section-footer fullWidth row">
-           <div class="arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
-              <polygon points="0,0 80,0 40, 40" fill="#EBECFF" fill-opacity="1">
-            </svg>
-          </div>
-          <div class="margin-top-40 small-12 columns">
-            <div class="row">
-              <div class="medium-10 large-7 columns small-centered">
-              <h3 class="section-footer-text">Click Below For</h3>
-              <div class="divider columns small-centered"></div>
-                <div class="row">
-                  <div class="small-6 columns"> 
-                    <h4 class="section-footer-text">Directions to Van Nuys</h4>
-                    <h5 class="margin-top-15 section-footer-text"><a class="alt-button button radius large" href="#" data-reveal-id="vn405">From the 405</a> </h5>
-                    <div id="vn405" class="medium reveal-modal" data-reveal> 
-                    <h2 class="text-center">From the 405</h2>     
-                    <p class="text-center section-footer-text">
-                      Take the Victory Blvd. exit towards the Gov't Center. <br>
-                      Take Victory Blvd. to Van Nuys Blvd. <br>
-                      Turn left on Van Nuys Blvd. <br>
-                      Turn left on Hamlin Street<br>
-                      The Center is on your right.
-                    </p> <a class="close-reveal-modal">&#215;</a> 
-                    </div>
-                    <h5 class="section-footer-text"><a class="button radius large" href="#" data-reveal-id="vn101">From the 101</a></h5>
-                    <div id="vn101" class="medium reveal-modal"data-reveal>
-                    <h2 class="text-center">From the 101</h2> 
-                      <p class="text-center section-footer-text">
-                      Take the Van Nuys Blvd. exit towards Van Nuys. <br>
-                      Turn left on Hamlin Street. <br>
-                      The Center is on your right.
-                    </p><a class="close-reveal-modal">&#215;</a> 
-                    </div>
-                  </div>
-                  <div class="small-6 columns">
-                    <h4 class="section-footer-text">Directions to Long Beach</h4>
-                    <h5 class="margin-top-15 section-footer-text"><a class="button radius large" href="#" data-reveal-id="lb710n">From the 710 N</a> </h5>
-                    <div id="lb710n" class="medium reveal-modal" data-reveal> 
-                    <h2 class="text-center">From the 710 N</h2>     
-                    <p class="text-center section-footer-text">
-                      Take the Del Amo Blvd E exit.<br>
-                      Merge onto W Del Amo Blvd. <br>
-                      Turn right onto Long Beach Blvd. <br>
-                      Continue on Long Beach Blvd. for about one mile.<br>
-                      The Center is on your left.
-                    </p> <a class="close-reveal-modal">&#215;</a> 
-                    </div>
-                     <h5 class="section-footer-text"><a class="button radius large" href="#" data-reveal-id="lb710s">From the 710 S</a> </h5>
-                    <div id="lb710s" class="medium reveal-modal" data-reveal> 
-                    <h2 class="text-center">From the 710 S</h2>     
-                    <p class="text-center section-footer-text">
-                      Take the Long Beach Blvd S exit. <br>
-                      Continue on Long Beach Blvd. for about 2 miles. <br>
-                      The Center is on your left.
-                    </p> <a class="close-reveal-modal">&#215;</a> 
-                    </div>
-                    <h5 class="section-footer-text"><a class="button radius large" href="#" data-reveal-id="lb405">&nbsp;From the 405 &nbsp;</a> </h5>
-                    <div id="lb405" class="medium reveal-modal" data-reveal> 
-                    <h2 class="text-center">From the 405</h2>     
-                    <p class="text-center section-footer-text">
-                      Take the Long Beach Blvd exit. <br>
-                      Follow signs for Bixby Knolls.  <br>
-                      Merge onto Long Beach Blvd <br>
-                      Continue on Long Beach Blvd. for about 1 and a half miles. <br>
-                      The Center is on your right.
-                    </p> <a class="close-reveal-modal">&#215;</a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="small-5 small-centered columns">
-                <div class="margin-top-20 margin-bottom-40 section-footer-link">
-                  <a id="location_footer" href="#locations">
-                    <%=image_tag('logo_alt.png', class: 'section-footer-logo')%>
-                    <p>Back to Top </p>
-                  </a>    
-                </div>                
-              </div>
-            </div> 
-          </div>
-       </div>
-    </div>
-    <!-- End Locations -->
-      <div class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
-          <polygon points="0,0 82,0 41, 41" fill="#0b1042" fill-opacity="1">
-        </svg>
-      </div>
-    <div id="documents" class="scrollto">
-      <a class="anchor" name="document"></a>
-      <div class="row fullWidth ">
-        <div class="header small-12 columns">
-              <h1><%= image_tag('squigs.png', width: '50')%>Documents<%= image_tag('squigs.png', width: '50') %></h1>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="margin-top-40 small-12 text-center small-centered columns">
-          <div class="row">
-            <div class="small-12 medium-8 small-centered columns">
-              <h3>Resources For Patients</h3>
-              <p>As a patient of the Hamlin Psyche Center, you are entitled to the most effective and appropriate treatment.  Click below for our Treatment Program outlining our psychotherapy program and our medication formulary.</p>
-            </div>  
-          </div>
-          <ul class="margin-top-20 small-block-grid-1 medium-block-grid-3">
-            <li>
-              <%=link_to("https://www.filestackapi.com/api/file/4Lv8KzkXSSeX2oJDHm3z", class: "doc") do%>
-              <caption>Treatment Program<br><i class="realbig-icon fi-page-export-doc large"></i> </caption>
-              <%end%>
-            </li>
-            <li>
-              
-            </li>          
-            <li>
-              
-            </li>
-           </ul>
-        </div>     
-        <div class="small-12 columns">
-          <div class="row">
-              <div class="margin-top-40 small-12 medium-8 small-centered columns">
-                <h3>Articles</h3>
-                 <p>With over 40 years of experience in the California Workers' Compensation system, Dr. Thomas Curtis, M.D., has been instrumental in shaping case law surrounding psychiatric injury.  Click below for articles written by Dr. Curtis on various Workers' Compensation issues.</p>
-              </div>  
-          </div>
-          <ul class="margin-top-20 small-block-grid-1 medium-block-grid-3">
-            <li>
-            <%=link_to("https://www.filestackapi.com/api/file/XnSfqn4QZ62igcbD40Nd", class: "doc") do%>
-              <caption>Guidelines on Guidelines <br> by Thomas Curtis, M.D. <br><i class="realbig-icon fi-page-export-doc large"></i> </caption>
-            <%end%>
-            </li>  
-            
-           <li>
-            <%=link_to("https://www.filestackapi.com/api/file/xse0hvweRROI6MHmWfB8", class: "doc") do%>
-              <caption>Psyche Injury  <br> by Thomas Curtis, M.D. <br><i class="realbig-icon fi-page-export-doc large"></i> </caption>
-            <%end%>
-            </li>
-            <li></li>
-          </ul>
-        </div>   
-      </div>
-        <div class="s-f-container section-footer fullWidth row">
-             <div class="arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
-                <polygon points="0,0 80,0 40, 40" fill="#EBECFF" fill-opacity="1">
-              </svg>
-            </div>
+<!-- Jumbotron -->
+<div id="home" class="shadow scrollto jumbotron">
+  <!-- <img  src="img/jumbo_bg.jpg"> -->
+  <div class="banner">
+    <div class="banner-area">
+     <div class="row">
+      <div class="small-12 columns">
+        <h1 class="banner-text">Hamlin Psyche Center</h1>
         <div class="row">
-          <div class="small-5 small-centered columns">
-            <div class="margin-top-20 margin-bottom-40 section-footer-link">
-              <a id="location_footer" href="#locations">
-                <%=image_tag('logo_alt.png', class: 'section-footer-logo')%>
-                <p>Back to Top </p>
-              </a>    
-            </div>                
+          <div class="small-12 small-centered columns divider"></div>
+          <div class="small-12 small-centered columns">
+            <h4 class="banner-text">A Psychiatric Clinic </h5>
+              <div class="banner-sub">
+                <p class="banner-text"> Serving the Los Angeles area, providing Workers' Compensation evaluations and Disability evaluations as well as treatment for industrial injuries.</p>
+              </div>
+            </div>
+            <div class="button-group radius stack-for-small small-centered text-center columns buttons">
+              <a id="banner_contact" class="button large">Get an Appointment</a>
+              <a id="banner_service" class="button large">Learn More</a>            
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Jumbotron -->
+
+<!-- Sub-Content -->
+<div id="sub_content">
+  <a class="anchor" name="services-section"></a>
+  <!-- Begin Services -->
+  <div id="services" class="scrollto">
+    <div class="row">
+      <div class="margin-bottom-20 small-12 columns">
+        <h1 class="header">Services</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <div data-equalizer="column" class="row">
+          <div data-equalizer-watch="column" class="small-12 medium-4 columns">
+            <ul data-equalizer="column2" class="pricing-table">
+              <div data-equalizer-watch="column2">
+              <li class="title">Workers' Compensation Evaluations</li>
+              <li class=""><%=image_tag('icon1.jpg', class: '')%></li>
+              <li class="bullet-item">Experts in the System</li>
+              <li class="description">The Hamlin Psyche Center is a psychiatric practice with over 40 years experience in psychiatric evaluation and medical-legal reporting and over 30 years experience in evaluating and treating injured workers.</li>
+              <li class="bullet-item">Expert Evaulators</li>
+              <li class="description">Our clinicians all specialize in Workers' Compensation evaluations, all working to get you back to work.</li>
+              <li class="cta-button"><a class="service_contact button" >Make Appointment</a></li>
+              </div>
+            </ul>
+          </div>
+          <div data-equalizer-watch="column" class="small-12 medium-4 columns">
+            <ul data-equalizer="column2" class="pricing-table">
+              <div data-equalizer-watch="column2">
+              <li class="title">Disability Evaluations</li>
+              <li class=""><%=image_tag('icon2.png', class: '')%></li>
+              <li class="bullet-item">Getting You The Benefits You Deserve</li>
+              <li class="description">Our evaluators and staff will work with you to get you the benefits you deserve so that you can stay afloat.</li>
+              <li class="bullet-item">With You All the Way</li>
+              <li class="description">The Hamlin Psyche Center is prepared to work with you from claim to settlement.  Our staff and clinicians will be there for the ups, downs, and everything in between.  </li>
+              <li class="cta-button"><a class="service_contact button">Make Appointment</a></li>
+              </div>
+            </ul>
+          </div>
+          <div data-equalizer-watch="column" class="small-12 medium-4 columns">
+            <ul data-equalizer="column2" class="pricing-table">
+              <div data-equalizer-watch="column2">
+              <li class="title">Expert Treatment</li>
+              <li class=""><%=image_tag('icon3.jpg', class: '')%></li>
+              <li class="bullet-item">Indvidiualized Therapy</li>
+              <li class="description">Our therapists will work with you on a personal basis to help you cope with your injury and its aftermath.  Whether it's getting you back to work, or accepting your disability, our therapists are here to listen.</li>
+              <li class="bullet-item">Expert Medication Management</li>
+              <li class="description">Sometimes therapy alone is not enough.  We'll work with you to find an appropriate medication regimen to help you feel better.</li>
+              <li class="cta-button"><a class="service_contact button">Make Appointment</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>   
+</div>
+<!-- End Services -->
+
+<div class="s-f-container section-footer fullWidth row">
+  <div class="arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
+      <polygon points="0,0 80,0 40, 40" fill="#EBECFF" fill-opacity="1">
+      </svg>
+    </div>
+
+    <div class="small-12 columns">
+      <div class="row">
+        <div class="small-5 small-centered columns">
+          <div class="margin-top-40 margin-bottom-40">
+            <blockquote>Our treatment program is directed not only towards reducing emotional stress symptoms, but also towards establishing a work-life direction in the first three months so that you can move forward as soon as possible to maximally avoid economic loss. <cite>Thomas Curtis, M.D.</cite></blockquote>
+          </div>                
+        </div>
+      </div>
+    </div>
+  </div>       
+<div class="arrow">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" ><polygon points="0,0 82,0 41, 41" fill="#0b1042" fill-opacity="1"></svg>
+</div>
+
+  <!-- Begin Locations -->
+  <div id="locations" class="scrollto">
+    <div class="row ">
+      <div class="small-12 columns">
+        <h1 class="header">Locations</h1>
+      </div>
+    </div>
+    <div class=" content row">
+      <!-- todo: make medium-block-grid-3 f -->
+      <div class="small-centered subheader small-12 columns">
+        <h3>The Hamlin Psyche Center offers evaluation and treatment services throughout the Los Angeles area.  Psychological healing is not far away.</h3>
+        <div class="row">
+         <div class="small-12 medium-4 columns">
+          <div class="map-button">
+            <div id="vn" class="mapWrap text-center">
+              <%=image_tag('vn.jpg', class: 'big-icon')%>
+                <p class="shadow initial-title"> Van Nuys <br> <small>Monday-Friday</small></p>
+                <div class="mapDescriptionWrapper">
+                  <div class="mapDescription">
+                    <p>14531 Hamlin Street</p>
+                    <p>Van Nuys, CA 91411</p>
+                  </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-4 columns"> 
+          <div class="map-button">
+            <div id="la" class="mapWrap">
+              <%=image_tag('lb.jpg', class: 'big-icon')%>
+                <p class="shadow initial-title">Long Beach <br> <small>Mondays and Fridays</small></p>
+                <div class="mapDescriptionWrapper">
+                  <div class="mapDescription">
+                    <p>4300 Long Beach Blvd.</p>
+                    <p>Long Beach, CA 90807</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-4 columns"> 
+          <div class="map-button">
+            <div id="lb" class="mapWrap">
+              <%=image_tag('la.jpg', class: 'big-icon')%>
+                <p class="shadow initial-title">Los Angeles <br> <small>Wednesdays</small> </p>
+                <div class="mapDescriptionWrapper">
+                  <div class="mapDescription">
+                    <p>3251 W. 6th Street Suite B2</p>
+                    <p>Los Angeles, CA 90020</p>
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class=" small-12 columns">
+      <div class="row">
+        <div class="small-12 columns">
+          <ul id="upperpane" class="title small-block-grid-3" data-equalizer>  
+            <li data-equalizer-watch> <h4>Accessibile Locations</h4></li>
+            <li data-equalizer-watch><h4>Here to Help </h4></li>
+            <li data-equalizer-watch><h4>Full-Service Clinics</h4></li>    
+          </ul>
+          <ul id="pane" class="small-block-grid-3" data-equalizer>  
+            <li data-equalizer-watch> <i class="realbig-icon fi-map large"></i><p>Convenient locations in Van Nuys, Los Angeles and Long Beach.</p></li>
+            <li data-equalizer-watch><i class="realbig-icon fi-torsos-all large"></i><p>Our clinics are staffed with dedicated professionals.</p></li>
+            <li data-equalizer-watch><i class="realbig-icon fi-first-aid large"></i><p>Treatment and evaluation available at all locations.</p></li>    
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12  small-centered columns">
+      <h2 class="header">
+        Directions
+      </h2>
+      <p>Click below to get a map to our clinics.</p>
+      <div class="row">
+        <div class="small-7 small-centered margin-bottom-20 columns">
+          <dl class="sub-nav">
+            <dt>SELECTED OFFICE: </dt>
+            <dd class="active"><a class="map-link" data-map="14531 Hamlin Street Van Nuys CA 91411">Van Nuys</a></dd>
+            <dd><a class="map-link" data-map="4300 Long Beach Blvd. Long Beach CA 90807">Long Beach</a></dd>
+            <dd><a class="map-link" data-map="3251 W. 6th Street Holmes Center Los Angeles CA 90020">Los Angeles</a></dd>
+
+          </dl>
+
         </div> 
       </div>
     </div>
-    <div class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
-          <polygon points="0,0 82,0 41, 41" fill="#0b1042" fill-opacity="1">
-        </svg>
-      </div>
-    <!-- Begin Contact -->
-    <div id="contact" class="scrollto">
-      <a class="anchor" name="contact-form"></a>
-      <div class="row fullWidth ">
-        <div class="header small-12 columns">
-              <h1><%= image_tag('squigs.png', width: '50') %>Contact<%= image_tag('squigs.png', width: '50') %></h1>
+    <div class="small-12 small-centered meium-10 dcolumns">
+      <div class="row">
+       <iframe class="map-target small-12 columns big-icon"
+       src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCnXy5N52r2BsyqhjIU-T4shbIqgeaf34g&q=14531+Hamlin+Street+Van+Nuys+CA+91411">
+     </iframe>
+   </div>
+ </div>
+</div>  
+
+</div>
+<!-- End Locations -->
+<div class="s-f-container section-footer fullWidth row">
+  <div class="arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
+      <polygon points="0,0 80,0 40, 40" fill="#EBECFF" fill-opacity="1">
+      </svg>
+    </div>
+
+    <div class="small-12 columns">
+      <div class="row">
+        <div class="small-5 small-centered columns">
+          <div class="margin-top-40 margin-bottom-40">
+            <blockquote>The employee is entitled, in any serious case, upon request, to the services of a consulting physician, chiropractor, or acupuncturist of his or her choice at the expense of the employer. The treatment shall be at the expense of the employer. <cite>Labor Code 4601</cite></blockquote>
+          </div>                   
         </div>
       </div>
-      <div class="margin-top-40 row">
-        <div class="small-12 medium-10 small-centered columns">
-          <h3>Need an appointment?  Need information?  Need to request a document?</h3>
-          <p>Get in touch by filling out the form below or by calling or faxing.</p>
+    </div>
+  </div>       
+<div class="arrow">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" ><polygon points="0,0 82,0 41, 41" fill="#0b1042" fill-opacity="1"></svg>
+</div>
+<div id="documents" class="scrollto">
+  <a class="anchor" name="document"></a>
+  <div class="row ">
+    <div class=" small-12 columns">
+      <h1 class="header">Documents</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="margin-top-40 small-12 text-center small-centered columns">
+      <div class="row">
+        <div class="small-12 medium-8 small-centered columns">
+          <h3>Resources For Patients</h3>
+          <p>As a patient of the Hamlin Psyche Center, you are entitled to the most effective and appropriate treatment.  Click below for our Treatment Program outlining our psychotherapy program and our medication formulary.</p>
+        </div>  
+      </div>
+      <ul class="margin-top-20 small-block-grid-1 medium-block-grid-3">
+        <li>
+          <%=link_to("https://www.filestackapi.com/api/file/4Lv8KzkXSSeX2oJDHm3z", class: "doc") do%>
+          <caption>Treatment Program<br><i class="realbig-icon fi-page-export-doc large"></i> </caption>
+          <%end%>
+        </li>
+        <li>
+
+        </li>          
+        <li>
+
+        </li>
+      </ul>
+    </div>     
+    <div class="small-12 columns">
+      <div class="row">
+        <div class="margin-top-40 small-12 medium-8 small-centered columns">
+          <h3>Articles</h3>
+          <p>With over 40 years of experience in the California Workers' Compensation system, Dr. Thomas Curtis, M.D., has been instrumental in shaping case law surrounding psychiatric injury.  Click below for articles written by Dr. Curtis on various Workers' Compensation issues.</p>
+        </div>  
+      </div>
+      <ul class="margin-top-20 small-block-grid-1 medium-block-grid-3">
+        <li>
+          <%=link_to("https://www.filestackapi.com/api/file/XnSfqn4QZ62igcbD40Nd", class: "doc") do%>
+          <caption>Guidelines on Guidelines <br> by Thomas Curtis, M.D. <br><i class="realbig-icon fi-page-export-doc large"></i> </caption>
+          <%end%>
+        </li>  
+
+        <li>
+          <%=link_to("https://www.filestackapi.com/api/file/xse0hvweRROI6MHmWfB8", class: "doc") do%>
+          <caption>Psyche Injury  <br> by Thomas Curtis, M.D. <br><i class="realbig-icon fi-page-export-doc large"></i> </caption>
+          <%end%>
+        </li>
+        <li></li>
+      </ul>
+    </div>   
+  </div>
+</div>
+<div class="s-f-container section-footer fullWidth row">
+  <div class="arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
+      <polygon points="0,0 80,0 40, 40" fill="#EBECFF" fill-opacity="1">
+      </svg>
+    </div>
+
+    <div class="small-12 columns">
+      <div class="row">
+        <div class="small-5 small-centered columns">
+          <div class="margin-top-40 margin-bottom-40">
+            <blockquote>Doctors should examine the applicant and provide evidence and opinions on the applicant’s position in all cases. The doctor should also not be afraid to comment on a good faith defense. <cite>Thomas Curtis, M.D., Jan 2016, <em>Psyche Injury</em></cite></blockquote>
+          </div>                
+        </div>
+      </div>
+    </div>
+  </div>       
+<div class="arrow">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" ><polygon points="0,0 82,0 41, 41" fill="#0b1042" fill-opacity="1"></svg>
+</div>
+<!-- Update Van Nuys Fax and Add days for Locations -->
+<!-- Begin Contact -->
+<div id="contact" class="scrollto">
+  <a class="anchor" name="contact-form"></a>
+  <div class="row ">
+    <div class=" small-12 columns">
+      <h1 class="header">Contact</h1>
+    </div>
+  </div>
+  <div class="margin-top-40 row">
+    <div class="small-12 medium-10 small-centered columns">
+       <div class="panel big-icon row">
+        <h3>Call or Fax </h3>
+         <div class="small-12 medium-4 columns">
+
+          <dl>
+            <h4>Van Nuys</h4>
+            <dd>Mon-Fri</dd>
+            <dt>Phone</dt>
+            <dd>818-780-4409</dd>
+            <dt>Fax</dt>
+            <dd>818-780-4472</dd>
+          </dl>
+          </div>
+          <div class="small-12 medium-4 columns">
+          <dl>
+            <h4>Long Beach</h4>
+            <dd>Mon & Fri</dd>
+            <dt>Phone</dt>
+            <dd>562-513-3435</dd>
+            <dt>Fax</dt>
+            <dd>562-513-3518</dd>
+          </dl>
+          </div>
+          <div class="small-12 medium-4 columns">
+          <dl>
+            <h4>Los Angeles</h4>
+            <dd>Wednesdays</dd>
+            <dt>Phone</dt>
+            <dd>213-352-1397</dd>
+            <dt>Fax</dt>
+            <dd>213-352-1398</dd>
+          </dl>
+          </div>
          </div>
       </div>
-        <div class="form-header margin-bottom-40 small-centered small-12 medium-8 large-4 columns">
-         <%= render 'form' %>
-         <div id="spinner"></div> 
-        </div>
     </div>
-    <!-- End Contact -->
-  </div>
-  <!-- End Sub-Content -->
+     
+     <h2 class="margin-top-20">For Referrals, Fill Out the Form Below.</h2>
+    <div class="form-header big-icon margin-top-20 margin-bottom-40 small-centered small-12 medium-8 large-6 columns">
+     <%= render 'form' %>
+     <div id="spinner"></div> 
+   </div>
+ </div>
+ <!-- End Contact -->
+</div>
+<!-- End Sub-Content -->
 
- 
+
 
 

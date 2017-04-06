@@ -162,8 +162,10 @@ p{
 
 .header{
 	margin-top: 60px;
-	border-top: 1px solid #6C6F8D;
-	border-bottom: 1px solid #6C6F8D;
+	background-color: #0B1042;
+	color: #EBECFF !important;
+	/*border-top: 1px solid #6C6F8D;*/
+	/*border-bottom: 2px solid #6C6F8D;*/
 }
 
 .subheader{
@@ -236,17 +238,15 @@ svg{
 }
 
 .big-icon{
+	display:block;
 	border: 1px solid #0b1042;
 	-webkit-box-shadow: 1px 1px 1px 0px rgba(11,16,66,1);
 	-moz-box-shadow: 1px 1px 1px 0px rgba(11,16,66,1);
 	box-shadow: 1px 1px 1px 0px rgba(11,16,66,1);
-	padding: 0;
+	/*padding: 0;*/
 }
 
-div>.big-icon{
-	max-width: 75%;
 
-}
 
 .big-icon>img{
 	width: 100%;
@@ -332,13 +332,18 @@ div>.big-icon{
 
 #upperpane{
 	border-top: 1px dotted #6C6F8D;
-	margin-top: 60px;
+	margin-top: 20px;
 }
 
-
+ul.pricing-table{
+	border: solid 1px #0B1042 !important;
+}
+li.title{
+	background-color: #0B1042 !important;
+}
 #pane{
 	border-bottom: 1px dotted #6C6F8D;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 #pane>li, #upperpane>li{
 	border-right: 1px dotted #6C6F8D;
@@ -357,6 +362,9 @@ div>.big-icon{
 .map-button{
 	position: relative;
 	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 250px;
 }
 
 .mapWrap {
@@ -391,12 +399,22 @@ div>.big-icon{
 	background-color: rgba(11, 16, 66, 1);
 	color: #FFF !important;
 	position: absolute;
-	top: 45%;
+	top: 30%;
 	width: 100%;
 	font-size: 1.5rem;
 	opacity: .85;
+	padding-bottom: 4%;
+	padding-top:2%;
 }
 
+.initial-title>small{
+	display: block;
+
+	margin: 0 auto;
+	border-top: 1px solid white;
+	width: 75%;
+
+}
 .direction{
 	position: absolute;
 }
@@ -466,13 +484,14 @@ label .error {
 	color: #0b1042;
 }
 
+#contact .panel{
+	background-color: #f9f9ff;
+}
 .form-header{
 	padding: 2rem;
 /*	border: 1px solid #6C6F8D;*/
 	background-color: #0b1042;
-	-webkit-box-shadow: 1px 1px 3px 0px rgba(11,26,111,1);
-	-moz-box-shadow: 1px 1px 3px 0px rgba(11,26,111,1);
-	box-shadow: 1px 1px 3px 0px rgba(11,26,111,1);
+
 
 }
 
@@ -662,7 +681,7 @@ footer{
 		max-width: 100%;
 
 	}
-
+/*
 	.show-for-small-only p{
 		font-size: .9rem;
 
@@ -670,9 +689,9 @@ footer{
 
 	.map-target{
 		height: 250px;
-	}
+	}*/
 
-	.mapWrap{
+/*	.mapWrap{
 		width: 90px;
 		height: 67.5px;
 	}
@@ -685,9 +704,9 @@ footer{
 	#lb{
 		float: right;
 		margin-right:3%;
-	}
+	}*/
 
-	.mapDescription{
+/*	.mapDescription{
 	
 		width: 90px;
 		position: absolute;
@@ -703,7 +722,7 @@ footer{
 	.realbig-icon{
 		font-size: 65px;
 	}
-
+*/
 }
 
 
@@ -724,7 +743,7 @@ footer{
 
 	}
 
-	#vn{
+/*	#vn{
 		float: left;
 		margin-left: 3%;
 	}
@@ -732,7 +751,7 @@ footer{
 	#lb{
 		float: right;
 		margin-right:3%;
-	}
+	}*/
 
 }
 
@@ -755,19 +774,19 @@ footer{
 		font-size: .85rem;
 	}
 
-	.mapWrap{
+/*	.mapWrap{
 		width: 170px;
 		height: 127.257142857px;
-	}
+	}*/
 
-	.mapDescription{
+/*	.mapDescription{
 	
 		width: 170px;
 		position: absolute;
 		margin-right: -170px;
 		top: 40%;
 
-	}
+	}*/
 
 	.mapDescription p, .initial-title{
 		font-size:.75rem;
@@ -786,7 +805,7 @@ footer{
 		margin: 0;
 	}
 
-	#vn{
+/*	#vn{
 		float: left;
 		margin-left: 3%;
 	}
@@ -795,7 +814,7 @@ footer{
 		float: right;
 		margin-right:3%;
 	}
-
+*/
 	.footer-nav{
 		font-size: .75rem !important;
 	}
@@ -825,7 +844,7 @@ footer{
 	.mapWrap{
 		width: 175px;
 		height: 131.4444444444px;
-	}
+	/*}*/
 
 	.map-target{
 		height: 300px;
