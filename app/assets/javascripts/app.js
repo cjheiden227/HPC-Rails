@@ -1,8 +1,6 @@
 
 $(document).foundation();
 
-$('a.reveal-link').trigger('click');
-
 //Initialize the sticky navbar
 $('.navbarWrapper').stickyNavbar({
         startAt: 0,
