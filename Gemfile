@@ -35,10 +35,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 #Custom HPC gems
 
-gem 'active_attr'
-gem "jquery-validation-rails"
-gem 'tzinfo-data'
-gem 'filepicker-rails'
+# gem 'active_attr'
+# gem "jquery-validation-rails"
+# gem 'tzinfo-data'
+# gem 'filepicker-rails'
 
 platforms :ruby do # linux
   gem 'unicorn'
@@ -47,7 +47,7 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
 #  gem 'byebug'
-   gem 'sqlite3', '~> 1.3.0'
+  gem 'sqlite3', '~> 1.3.0'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
