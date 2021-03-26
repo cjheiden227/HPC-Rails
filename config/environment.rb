@@ -1,6 +1,5 @@
 # Load the Rails application.
-ENV['GEM_PATH']='/home/hamlinps/ruby/gems/gems'
-require File.expand_path('../application', __FILE__)
+require_relative 'application'
 
 # Initialize the Rails application.
 Rails.application.initialize!

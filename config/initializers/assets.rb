@@ -3,16 +3,12 @@
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
 
-# Add additional assets to the asset load path
+# Add additional assets to the asset load path.
 # Rails.application.config.assets.paths << Emoji.images_path
+# Add Yarn node_modules folder to the asset load path.
+Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 # Precompile additional assets.
-# application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-# Rails.application.config.assets.precompile += %w( search.js )
-Rails.application.config.assets.precompile += %w( app.css )
-Rails.application.config.assets.precompile += %w( hpc.css )
-Rails.application.config.assets.precompile += %w( foundation-icons/foundation-icons.css )
-Rails.application.config.assets.precompile += %w( foundation.min.js )
-Rails.application.config.assets.precompile += %w( app.js )
-Rails.application.config.assets.precompile += %w( jquery.stickyNavbar.min.js )
-
+# application.js, application.css, and all non-JS/CSS in the app/assets
+# folder are already added.
+# Rails.application.config.assets.precompile += %w( admin.js admin.css )
