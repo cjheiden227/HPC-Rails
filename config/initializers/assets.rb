@@ -10,9 +10,9 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( app.css )
-Rails.application.config.assets.precompile += %w( my-app.css )
+Rails.application.config.assets.precompile += %w( hpc.css )
 Rails.application.config.assets.precompile += %w( foundation-icons/foundation-icons.css )
 Rails.application.config.assets.precompile += %w( foundation.min.js )
 Rails.application.config.assets.precompile += %w( app.js )
 Rails.application.config.assets.precompile += %w( jquery.stickyNavbar.min.js )
-Rails.application.config.assets.precompile += %w( spin.min.js )
+

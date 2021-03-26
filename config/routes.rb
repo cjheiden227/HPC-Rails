@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :home_page, only: :index
-  match '/email' => 'home_page#send_email_form', as: :email_form, via: :post
+  
 
 ###
   root :to => 'home_page#index'
