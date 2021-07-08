@@ -76,7 +76,7 @@ p{
 .jumbotron{
 	height: 100%;
 	position: relative;
-	 background: url(<%= asset_path 'jumbo_bg.jpg' %>) no-repeat center center; 
+	 background: url(/assets/jumbo_bg-60b305256eb00ad5b95b2e5b9f1e6bcab20e1fd10d8278a7d3bfef9a22f1037e.jpg) no-repeat center center; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
