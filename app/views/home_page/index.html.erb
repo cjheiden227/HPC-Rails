@@ -112,52 +112,28 @@
 </div>
 
   <!-- Begin Locations -->
-  <div id="locations" class="scrollto">
-    <div class="row ">
-      <div class="small-12 columns">
-        <h1 class="header">Locations</h1>
-      </div>
+<div id="locations" class="scrollto">
+  <div class="row ">
+    <div class="small-12 columns">
+      <h1 class="header">Locations</h1>
     </div>
-    <div class=" content row">
-      <!-- todo: make medium-block-grid-3 f -->
-      <div class="small-centered subheader small-12 columns">
-        <h3>The Woodland Psyche Center offers evaluation and treatment services throughout the Los Angeles area.  Psychological healing is not far away.</h3>
-        <div class="row">
-         <div class="small-12 medium-6 columns">
-          <div class="map-button">
-            <div id="vn" class="mapWrap text-center">
-              <%=image_tag('vn.jpg', class: 'big-icon')%>
-                <p class="shadow initial-title"> Woodland Hills</small></p>
-                <div class="mapDescriptionWrapper">
-                  <div class="mapDescription">
-                    <p>14531 Hamlin Street</p>
-                    <p>Van Nuys, CA 91411</p>
-                  </div>
-                </div>
-                
-            </div>
-          </div>
-        </div>
-       
-        <div class="small-12 medium-6 columns"> 
-          <div class="map-button">
-            <div id="la" class="mapWrap">
-              <%=image_tag('la.jpg', class: 'big-icon')%>
-                <p class="shadow initial-title">Los Angeles </p>
-                <div class="mapDescriptionWrapper">
-                  <div class="mapDescription">
-                    <p>3251 W. 6th Street Suite 410</p>
-                    <p>Los Angeles, CA 90020</p>
-                  </div>
-                </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
+  <div class=" content row">
+      <!-- todo: make medium-block-grid-3 f -->
+    <div class="small-centered subheader small-12 medium-8 columns">
+        <p>The Woodland Psyche Center offers evaluation and treatment services at offices in Woodland Hills and Los Angeles. Our staff is ready to assist in your healing journey.</p>
+        <div class="row">
+          <div class="small-12 columns medium-6">
+            <%=image_tag('wh.png', class:"big-icon") %>
+            <p>Woodland Hills</p>
+          </div>
+            <div class="small-12 columns medium-6">
+            <%=image_tag('la.jpg', class:"big-icon") %>
+            <p>Los Angeles</p>
+          </div>
+        </div>
+      </div>
+    </div>
   <div class="row">
     <div class=" small-12 columns">
       <div class="row">
@@ -187,24 +163,60 @@
         <div class="small-7 small-centered margin-bottom-20 columns">
           <dl class="sub-nav">
             <dt>SELECTED OFFICE: </dt>
-            <dd class="active"><a class="map-link" data-map="14531 Hamlin Street Van Nuys CA 91411">Van Nuys</a></dd>
-            <dd><a class="map-link" data-map="4300 Long Beach Blvd. Long Beach CA 90807">Long Beach</a></dd>
+            <dd class="active"><a class="map-link" data-map="21800 Oxnard Street Woodland Hills CA 91367">Woodland Hills</a></dd>
             <dd><a class="map-link" data-map="3251 W. 6th Street Holmes Center Los Angeles CA 90020">Los Angeles</a></dd>
-
           </dl>
-
         </div> 
       </div>
     </div>
-    <div class="small-12 small-centered meium-10 dcolumns">
+    <div class="small-12 small-centered columns">
       <div class="row">
-       <iframe class="map-target small-12 columns big-icon"
-       src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCnXy5N52r2BsyqhjIU-T4shbIqgeaf34g&q=14531+Hamlin+Street+Van+Nuys+CA+91411">
-     </iframe>
-   </div>
- </div>
-</div>  
-
+        <iframe class="map-target small-12 columns big-icon"
+       src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCnXy5N52r2BsyqhjIU-T4shbIqgeaf34g&q=21800+W+Oxnard+St,+Woodland+Hills,+CA+91367">
+        </iframe>
+      </div>
+    </div>
+  </div>  
+  <div class="row">
+    <div class="small-12  small-centered columns">
+      <h2 class="header">
+        Parking
+      </h2>
+      <h3>Woodland Hills Parking Restrictions</h3>
+      <div class="row">
+        <div class="small-12 medium-3 margin-bottom-20 columns">
+          <h4>Calia St</h4>
+          <p>No Parking - Mondays 10am to 12pm</p>
+        </div> 
+        <div class="small-12 medium-3 margin-bottom-20 columns">
+          <h4>Owensmouth Ave</h4>
+          <p>No Parking - Mondays 10am to 12pm</p>
+        </div>
+        <div class="small-12 medium-3 margin-bottom-20 columns">
+          <h4>Marylee St</h4>
+          <p>No Parking - Mondays 10am to 12pm</p>
+        </div>
+        <div class="small-12 medium-3 margin-bottom-20 columns">
+          <h4>Vassar Ave</h4>
+          <p>No Restrictions</p>
+        </div> 
+      </div>
+      <div class="small-12 small-centered margin-bottom-20 columns">
+        <%=image_tag("Parking Map.png", class:'big-icon')%>
+      </div> 
+      
+      <h3>Los Angeles</h3>
+      <div class="row">
+        <div class="small-7 small-centered margin-bottom-20 columns">
+          <dl class="sub-nav">
+            <dt>SELECTED OFFICE: </dt>
+            <dd class="active"><a class="map-link" data-map="21800 Oxnard Street Woodland Hills CA 91367">Woodland Hills</a></dd>
+            <dd><a class="map-link" data-map="3251 W. 6th Street Holmes Center Los Angeles CA 90020">Los Angeles</a></dd>
+          </dl>
+        </div> 
+      </div>
+    </div>
+  </div>  
 </div>
 <!-- End Locations -->
 
@@ -224,17 +236,14 @@
           </div>                
         </div>
       </div>
-            <div class="row">
-      <div class="small-5 small-centered columns margin-bottom-40">
-      <ul>
-        <li><%=image_tag('cover.jpg', height:228, width:150, class: '')%></li>
-        <li class="margin-top-20 margin-bottom-20"><%=image_tag('available_at_amazon_en_vertical_rev.png', width:200, height:97, class: '')%></li>
-         <li><a href="https://www.amazon.com/How-Win-Your-Case-Psychiatrist-ebook/dp/B08Z79YCLR/ref=sr_1_1?dchild=1&keywords=how+to+win+your+case+thomas+curtis&qid=1616698091&sr=8-1" target="_blank" class="button large">Buy Dr. Curtis's Book!</a></li>
-
-      </ul>
-      
-      
-    </div>
+      <div class="row">
+        <div class="small-5 small-centered columns margin-bottom-40">
+          <ul>
+            <li><%=image_tag('cover.jpg', height:228, width:150, class: '')%></li>
+            <li class="margin-top-20 margin-bottom-20"><%=image_tag('available_at_amazon_en_vertical_rev.png', width:200, height:97, class: '')%></li>
+             <li><a href="https://www.amazon.com/How-Win-Your-Case-Psychiatrist-ebook/dp/B08Z79YCLR/ref=sr_1_1?dchild=1&keywords=how+to+win+your+case+thomas+curtis&qid=1616698091&sr=8-1" target="_blank" class="button large">Buy Dr. Curtis's Book!</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>       
@@ -254,71 +263,15 @@
     <div class="small-12 medium-10 small-centered columns">
        <div class="panel big-icon row">
           <div class="small-12 columns">
-          <dl>
-             <h3>IF YOU HAVE A MEDICAL OR PSYCHIATRIC EMERGENCY, PLEASE DO NOT USE THIS FORM, CALL 911 OR GO TO THE NEAREST HOSPITAL.</h3>
-          
-          </dl>
+	          <dl>
+	             <h3>IF YOU HAVE A MEDICAL OR PSYCHIATRIC EMERGENCY, PLEASE DO NOT USE THIS FORM, CALL 911 OR GO TO THE NEAREST HOSPITAL.</h3>
+	          </dl>
           </div>
-                 
-<!--          <div class="small-12 medium-4 columns">
-          <dl>
-            <h3>Van Nuys</h3>
-            <dd>Mon-Fri</dd>
-            <dt>Phone</dt>
-            <dd>818-780-4409</dd>
-            <dt>Fax</dt>
-            <dd>818-780-4472</dd>
-          </dl>
-          </div>
-          <div class="small-12 medium-4 columns">
-          <dl>
-            <h3>Long Beach</h3>
-            <dd>Every Other Mon & Every Fri</dd>
-            <dt>Phone</dt>
-            <dd>562-513-3435</dd>
-            <dt>Fax</dt>
-            <dd>562-513-3518</dd>
-          </dl>
-          </div>
-          <div class="small-12 medium-4 columns">
-          <dl>
-            <h3>Los Angeles</h3>
-            <dd>Wednesdays</dd>
-            <dt>Phone</dt>
-            <dd>213-352-1397</dd>
-            <dt>Fax</dt>
-            <dd>213-352-1398</dd>
-          </dl>
-          </div>
-         
-          <div class="small-12 columns">
-          <dl>
-            <h3>Therapist Contact Information</h3>
-            <dd>To contact your therapist, you MUST leave a voicemail from 8am to 5pm.  Please allow seven days for response.  Thank you.</dd>
-            <dt> CALL 818-780-4409</dt>
-            </dl>
-          </div>
-          <div class="small-12 columns"> 
-            
-          <dl>
-    
-             <dt>Aybike Kortan</dt>
-             <dd>Voicemail 805</dd>
-              <dt>Gilda Ruelas</dt>
-             <dd>Voicemail 704</dd>
-             <dt>Lynn Greenspan</dt>
-             <dd>Voicemail 701</dd>
-            </dl>
          </div>
- 
-
-            </dl> -->
-         </div>
-         </div>
-      </div>
+       </div>
     </div>
-      <div class="row margin-top-20 margin-bottom-40">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8KbKee7_RnceqWlKhTUw5VPrU06CGdKbylnFwtLACcoZD9w/viewform?embedded=true"  frameborder="0" width="100%" height="1200" marginheight="0" marginwidth="0">Loading...</iframe>
+    <div class="row margin-top-20 margin-bottom-40">
+       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8KbKee7_RnceqWlKhTUw5VPrU06CGdKbylnFwtLACcoZD9w/viewform?embedded=true"  frameborder="0" width="100%" height="1200" marginheight="0" marginwidth="0">Loading...</iframe>
    </div>
  </div>
  <!-- End Contact -->

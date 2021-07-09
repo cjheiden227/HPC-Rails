@@ -76,7 +76,7 @@ p{
 .jumbotron{
 	height: 100%;
 	position: relative;
-	 background: url(<%= asset_path 'jumbo_bg.jpg' %>) no-repeat center center; 
+	 background: url(/assets/jumbo_bg-60b305256eb00ad5b95b2e5b9f1e6bcab20e1fd10d8278a7d3bfef9a22f1037e.jpg) no-repeat center center; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -150,7 +150,6 @@ p{
 .service-row, .services {
 	height: 100%;
 }
-
 .services{
 	display: table;
 
@@ -272,7 +271,6 @@ svg{
 	width: 75%;
 	transition: all .3s;
 }
-
 .doc:hover{
 	transform: scale(1.1);
 
@@ -340,16 +338,13 @@ svg{
 ul.pricing-table{
 	border: solid 1px #0B1042 !important;
 }
-
 li.title{
 	background-color: #0B1042 !important;
 }
-
 #pane{
 	border-bottom: 1px dotted #6C6F8D;
 	margin-bottom: 20px;
 }
-
 #pane>li, #upperpane>li{
 	border-right: 1px dotted #6C6F8D;
 }
@@ -369,13 +364,13 @@ li.title{
 	margin-bottom: 20px;
 	margin-right: auto;
 	margin-left: auto;
-	width: 350px;
+	width: 250px;
 }
 
 .mapWrap {
   position: relative;
-  width: 300px;
-  height: 225px;
+  width: 250px;
+  height: 187.5px;
   transition: all .3s;
 
 }
@@ -425,9 +420,9 @@ li.title{
 }
 
 .mapDescription{
-	width: 300px;
+	width: 250px;
 	position: absolute;
-	margin-right: -300px;
+	margin-right: -250px;
 	top: 40%;
 }
 
@@ -513,7 +508,6 @@ label .error {
 	background-color: rgba(0, 0, 0, .5);
 	z-index: 100;
 }
-
 #message_body{
 	min-height: 100px;
 	max-height: 150px;
